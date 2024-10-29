@@ -16,7 +16,14 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function index(Request $request) {
-        $websiteInfo = WebsiteInformation::where('user_id', 1)->first();
+        $host = $request->getHost();
+        $arr_host = explode('.', $host);
+        $subDomain = $arr_host[0] ?? null;
+
+        $websiteInfo = WebsiteInformation::where('link_website', $subDomain)->first();
+        if (!$websiteInfo) {
+            return abort(404);
+        }
         $templateView = 'template1';
         $templateId = 1;
         if ($websiteInfo && $websiteInfo->template_id) {
