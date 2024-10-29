@@ -62,7 +62,7 @@ window.addEventListener('scroll',(event) => {
     document.querySelector('.mouse-scroll-on-mobile').style.visibility ="hidden";
   }
 });
-var scrollDownText = (typeof biicore.scroll_down_text != 'undefined' && biicore.scroll_down_text !== '') ? biicore.scroll_down_text : 'KĂ©o xuá»‘ng';
+var scrollDownText = (typeof biicore.scroll_down_text != 'undefined' && biicore.scroll_down_text !== '') ? biicore.scroll_down_text : 'Kéo xuống';
 document.write(`
 	<style type=text/css>
 	.mouse-scroll-on-mobile{display:none;}
@@ -92,7 +92,7 @@ if(biicore.alert && Object.keys(biicore.alert).length > 0 && biicore.alert.statu
       showConfirmButton: false,
       showCancelButton: true,
       focusCancel: true,
-      cancelButtonText: (typeof biicore.alert.cancel_button_text != 'undefined' && biicore.alert.cancel_button_text != '') ? biicore.alert.cancel_button_text : 'Táº¯t thĂ´ng bĂ¡o',
+      cancelButtonText: (typeof biicore.alert.cancel_button_text != 'undefined' && biicore.alert.cancel_button_text != '') ? biicore.alert.cancel_button_text : 'Tắt thông báo',
     });
   }, biicore.alert.timeout);
 }
@@ -169,7 +169,7 @@ if(biicore.bgMusic){
 	    transform: scale3d(1, 1, 1);
 	  }
 	}
-	
+
 	@keyframes biilogo-pulse {
 	  from {
 	    -webkit-transform: scale3d(1, 1, 1);
@@ -247,7 +247,7 @@ if(!biicore.isPremium && !biicore.templatePremium) {
 	    transform: scale3d(1, 1, 1);
 	  }
 	}
-	
+
 	@keyframes biilogo-pulse {
 	  from {
 	    -webkit-transform: scale3d(1, 1, 1);
@@ -270,7 +270,7 @@ if(!biicore.isPremium && !biicore.templatePremium) {
 	.bii-logo:hover .bii-logo-secondary-content{ transform: translate3d(0, 0, 0);}
 	.bii-logo.show-sec .bii-logo-secondary{visibility: visible;}
 	.bii-logo.show-sec .bii-logo-secondary-content{ transform: translate3d(0, 0, 0);}
-	
+
 	.bii-logo-secondary{position: absolute;width: 320px;right: 25px;height: 40px;overflow: hidden;visibility: hidden;}
 	.bii-logo-secondary-content{display: flex;align-items: center;position: absolute;width: 320px;right: -25px;background: #fff;height: 40px;padding: 8px 40px 8px 11px;border: 1px solid #df4759;border-radius: 30px;z-index: 9999;font-size:14px;transform: translate3d(100%, 0, 0);transition: transform 175ms ease;font-family: arial;font-weight: 200;color: #000;}
 	.bii-footer .show-desktop{display: inline-block;}
