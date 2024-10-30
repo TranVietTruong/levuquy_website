@@ -62,7 +62,7 @@ window.addEventListener('scroll',(event) => {
     document.querySelector('.mouse-scroll-on-mobile').style.visibility ="hidden";
   }
 });
-var scrollDownText = (typeof biicore.scroll_down_text != 'undefined' && biicore.scroll_down_text !== '') ? biicore.scroll_down_text : 'KĂ©o xuá»‘ng';
+var scrollDownText = (typeof biicore.scroll_down_text != 'undefined' && biicore.scroll_down_text !== '') ? biicore.scroll_down_text : 'Kéo xuống';
 document.write(`
 	<style type=text/css>
 	.mouse-scroll-on-mobile{display:none;}
