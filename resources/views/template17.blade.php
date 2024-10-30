@@ -861,7 +861,7 @@
                         </div>
 
                         <div class="item">
-                            <blockquote>{{$custom['text_slider2'] ?? 'Cảm ơn ai đó đã vô tâm hời hợt để rồi tôi biết mình nên dừng lại ở đâu.'}}</blockquote>
+                            <blockquote>{{$custom['text_slider2'] ?? 'Cho đi tình yêu sẽ nhận lại hạnh phúc, hy vọng và ước mơ.'}}</blockquote>
                         </div>
 
                         <div class="item">
