@@ -225,7 +225,7 @@
     <div class="ornament5 hidden-sm hidden-xs hidden-md" data-0="opacity:1;" data--100-start="transform:translatex(-10%);" data-center-bottom="transform:translatex(100%);"></div>
     <div class="container">
         <div class="section-heading">
-            <h2><span class="bridesmaids">Phù Dâu &amp; Phù Rể</span> <span class="italic">&</span> <span class="groomsmen">Phù Rể</span></h2>
+            <h2><span class="bridesmaids">Phù Dâu</span> <span class="italic">&</span> <span class="groomsmen">Phù Rể</span></h2>
             <div class="hr"></div>
         </div>
         <div class="">

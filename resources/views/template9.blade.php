@@ -455,7 +455,7 @@
 @if(isset($websiteInfo['album']) && $websiteInfo['album'])
 <section id="gallery" class="gallery-section section-padding">
     <div class="section-heading text-center">
-        <h2>Album hình cưới</h2>
+        <h2>{{$custom['menu_album_hinh_cuoi'] ?? 'Album Hình cưới' }}</h2>
         <div class="hr"></div>
     </div>
     <div class="container">
