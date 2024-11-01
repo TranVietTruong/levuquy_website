@@ -5,28 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     @include('components.header')
 
-    <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap"rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('template25/css/libs.css?v=2024071')}}" />
-    <link rel="stylesheet" href="{{asset('template25/css/style.css?v=20240713')}}" />
-    <link href="{{asset('template25/css/calendar.css?v=20240713')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('template23/css/libs.css?v=20240713')}}" />
+    <link rel="stylesheet" href="{{asset('template23/css/style.css?v=20240713')}}" />
+    <link href="{{asset('template23/css/calendar.css?v=20240713')}}" rel="stylesheet">
 </head>
 <script type="text/javascript">
     var photoGalleries = [];
 </script>
 <body>
-<div class="wrapper shadow">
+<div class="wrapper">
     <header id="header" class="site-header header-style-1 d-none">
         <nav class="navbar bg-white shadow-sm py-1">
             <div class="container-fluid">
                 <div class="w-100 d-flex align-items-center justify-content-between">
-                    <a class="navbar-brand title" href="#">{{$logo1}} & {{$logo2}}</a>
+                    <a class="section-title navbar-brand" href="#">{{$logo1}} & {{$logo2}}</a>
                     <button class="navbar-toggler rounded-0 border-0 p-0" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <i class="bi bi-list fs-3 text-black"></i>
@@ -35,36 +33,38 @@
             </div>
         </nav>
     </header>
-    <section class="banner-section">
-        <div class="title-head">
-            <p class="m-0 py-4 sub-title">{{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn1'}} ♥ {{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}} sắp kết hôn.</p>
+    <section class="banner-section sub-title">
+        <div data-aos="fade-up" class="bgm_area py-4" id="top">
+            <p class="m-0 px-3 text-center">{{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn'}} ♥ {{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}} sắp kết hôn. </p>
         </div>
-        <div data-aos-duration="1000" data-aos="fade-down" class="main_area section-sub-title pt-5 sub-title">
-            <div class="wrap-img-title mb-5">
-                <img class="mb-2" src="https://preview.iwedding.info/templates/template110/img/intro-title.png" alt="" />
-                <img src="https://preview.iwedding.info/templates/template110/img/main-title-2.png" alt="" />
-            </div>
-            <div class="day_wrapper pt-4 mb-0 text-center">
-                @if (isset($websiteInfo['ngay_cuoi']))
-                    <p class="date-time text-center my-1">
-                        Ngày {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->day}} tháng {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->month}} năm {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->year}}.
-                    </p>
-                @else
-                    <p class="date-time text-center my-1">
-                        Ngày 12 tháng 12 năm 2024.
-                    </p>
-                @endif
-                <p class="text-center my-1">
-                    We are getting married
-                </p>
-            </div>
-            <div data-aos="fade-right" class="name-user mb-2 title text-center py-5 d-flex">
-                <span>{{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn2'}}</span>
-                <span class="text-and px-2">♥</span>
-                <span>{{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}}</span>
-            </div>
-            <div data-aos="flip-left" data-aos-duration="1000" class="wrap-img">
-                <img src="{{$custom['anh_home'] ?? 'https://cdn.biihappy.com/ziiweb/default/template/643d783d4952f55248073b44/29793e44e000d9ea242695c2955b75ed.jpg'}}" alt="">
+        <div class="main_area py-5 px-4">
+            <div class="main_image_area">
+                <div data-aos-duration="2000" data-aos="flip-left" class="wrap-img mb-4 text-center">
+                    <div class="main_image_wrapper" style="height: calc(100% + 50px);">
+                        <img src="https://preview.iwedding.info/templates/template130/img/main_bg.png" alt="" class="h-100">
+                    </div>
+                    <img src="{{$custom['anh_couple_1'] ?? 'https://cdn.biihappy.com/ziiweb/default/template/643d7a25b332be031b02857c/b4cc34300d41bb627e2124635feee955.jpg'}}">
+                </div>
+                <p data-aos="fade-up" class="mb-0 date text-center pt-3">04.04</p>
+                <div data-aos="fade-up" class="wedding_area text-center">
+                    <div class="title wrap-name pt-2 pb-4">
+                        <span class="groom_name">{{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn'}}</span>
+                        <span>♥</span>
+                        <span class="bride_name">{{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}}</span>
+                    </div>
+                </div>
+                <p data-aos="fade-up" class="married mb-0">We are getting married</p>
+                <div data-aos="fade-up">
+                    @if (isset($websiteInfo['ngay_cuoi']))
+                        <p class="date-time text-center m-0">
+                            Ngày {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->day}} tháng {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->month}} năm {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->year}}.
+                        </p>
+                    @else
+                        <p class="date-time text-center m-0">
+                            Ngày 04 tháng 04 năm 2024.
+                        </p>
+                    @endif
+                </div>
             </div>
         </div>
     </section>
@@ -75,7 +75,7 @@
                     <a href="javascript:void(0)" class="w-100 mb-1 accessibility-btn btn btn-secondary buttonDonate"
                        data-aos="fade-left">
                             <span class="content-button">
-                            <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/money_bag.png" alt="access-btn"> Mừng cưới
+                            <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/money_bag.png" alt="access-btn"> {{$custom['menu_mung_cuoi'] ?? 'Mừng cưới' }}
                             </span>
                     </a>
                 </div>
@@ -100,6 +100,7 @@
         </div>
     </section>
     @endif
+
     @if(isset($websiteInfo['album']) && $websiteInfo['album'])
     <section class="py-5 gallery-section section-bg-affect" id="gallery">
         <div class="container-fluid">
@@ -110,20 +111,20 @@
                 Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.
             </h3>
             <div class="row gx-2" id="photoGalleryContainer">
-                @if(count($albums))
-                    @foreach($albums as $key => $album)
-                        <script type="text/javascript">
-                            photoGalleries.push({
-                                src : "{{$album['large']}}",
-                                thumb: "{{$album['small']}}",
-                                subHtml: `<div class="lg-sub-html"><h4>{{$album['title']}}</h4></div>`
-                            });
-                        </script>
-                        <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery" data-aos="fade-right"
-                             data-index="{{$key}}"> <img src="{{$album['small']}}" />
-                        </div>
-                    @endforeach
-                @else
+            @if(count($albums))
+                @foreach($albums as $key => $album)
+                <script type="text/javascript">
+                    photoGalleries.push({
+                        src : "{{$album['large']}}",
+                        thumb: "{{$album['small']}}",
+                        subHtml: `<div class="lg-sub-html"><h4>{{$album['title']}}</h4></div>`
+                    });
+                </script>
+                <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery" data-aos="{{$key % 2 === 0 ? 'fade-right':'fade-left'}}"
+                     data-index="{{$key}}"> <img src="{{$album['small']}}" />
+                </div>
+                @endforeach
+            @else
                 <script type="text/javascript">
                     photoGalleries.push({
                         src : "https://cdn.biihappy.com/ziiweb/default/website/galleries/61990296d7e97a1853119579/large.jpg",
@@ -229,35 +230,7 @@
         </div>
     </section>
     @endif
-    <section class="py-8 invitation-section section-bg-affect" id="invitation">
-        <div class="container-fluid py-5">
-            <div class="w-100 px-3 my-5 sub-title invitation_wrapper mt-6">
-                <div data-aos="fade-up" data-aos-duration="2000" class="invitation-title px-4 text-center">
-                    <img src="https://preview.iwedding.info/templates/template110/img/sub-title.png" alt="" />
-                    <p>Lời Ngỏ</p>
-                </div>
-                <div data-aos="fade-up-right" class="px-4 invitation-content py-4 text-center">
-                    {{$custom['text_loi_ngo'] ?? 'Cảm ơn tất cả những người bạn thân yêu của tôi!Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình…Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi.Một lần nữa chân thành cảm ơn tất cả các bạn!'}}
-                </div>
-                <div data-aos="fade-up" class="couple text-center mb-5">
-                    <p class="m-0 mb-2">*groom <span>{{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn3'}}</span></p>
-                    <p><img src="https://preview.iwedding.info/templates/template110/img/intro-icon-01.png" alt="" /></p>
-                    <p class="m-0 mt-2">*bride <span>{{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}}</span></p>
-                </div>
-                <div data-aos="fade-up" class="wrap-img text-center mb-5">
-                    <img src="">
-                </div>
-                <div data-aos="fade-right" class="good-day py-5 mb-4">
-                    <img src="https://preview.iwedding.info/templates/template110/img/good-day.png" alt="" />
-                </div>
-                <div data-aos="fade-left" class="main_dday_area text-center">
-                    <div>
-                        <img src="https://preview.iwedding.info/templates/template110/img/sub-icon-03.png" style="width: 20px" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <section class="py-5 section-sub-title weddingdate-section section-bg-affect" id="weddingdate">
         <div class="container-fluid">
             <div class="w-100">
@@ -265,7 +238,7 @@
                     <div class="mini_calendar">
                         <table>
                             @if (isset($websiteInfo['ngay_cuoi']))
-                            <caption class="calendar-month">Th&aacute;ng {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->month}} /  {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->year}}</caption>
+                                <caption class="calendar-month">Th&aacute;ng {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->month}} /  {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->year}}</caption>
                             @else
                                 <caption class="calendar-month">Th&aacute;ng 04 / 2024</caption>
                             @endif
@@ -298,14 +271,14 @@
                                     @if($day === 3)
                                         <div id="today">3</div>
                                     @else
-                                       3
+                                        3
                                     @endif
                                 </td>
                                 <td>
                                     @if($day === 4)
                                         <div id="today">4</div>
                                     @else
-                                       4
+                                        4
                                     @endif
                                 </td>
                                 <td> @if($day === 5)
@@ -328,7 +301,7 @@
                                 <td> @if($day === 8)
                                         <div id="today">8</div>
                                     @else
-                                       8
+                                        8
                                     @endif</td>
                                 <td> @if($day === 9)
                                         <div id="today">9</div>
@@ -457,12 +430,13 @@
                     </div>
                 </div>
                 <div class="countdown" data-aos="fade-up-left">
-                    <div class="m-auto" id="clock" data-date="{{isset($websiteInfo['ngay_cuoi']) ? \Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->format('Y-m-d') : '2024-10-07'}}" data-text-day="Ngày" data-text-hour="Giờ"
+                    <div class="m-auto" id="clock" data-date="2024-04-04" data-text-day="Ngày" data-text-hour="Giờ"
                          data-text-minute="Phút" data-text-second="Giây"></div>
                 </div>
             </div>
         </div>
     </section>
+
     @if(isset($websiteInfo['cau_chuyen_tinh_yeu']) && $websiteInfo['cau_chuyen_tinh_yeu'])
     <section class="py-5 story-section section-bg-affect" id="story">
         <div class="container-fluid">
@@ -547,6 +521,96 @@
     </section>
     @endif
 
+
+    <section class="invitation-section py-5 px-4 section-bg-affect" id="invitation">
+        <div class="wrap-invitation">
+            <div class="w-100 text-center">
+                <img data-aos="fade-up" src="https://preview.iwedding.info/templates/template130/img/sub_title.png" alt="">
+                <div>
+                    <div data-aos="fade-up" class="mt-5 px-3 invitation-content sub-title mb-5 text-center">
+                        Cảm ơn tất cả những người bạn thân yêu của tôi!<br />
+                        Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình…<br />
+                        Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi.<br />
+                        Một lần nữa chân thành cảm ơn tất cả các bạn!
+                    </div>
+                    <div data-aos="fade-up"
+                         class="section-sub-title invitation-couple mb-5">
+                        <p class="d-flex text justify-content-center m-0"><small>groom</small>Kiến Văn <span>♥</span>  Việt Hoài <small>bride</small></p>
+                    </div>
+                    <img data-aos="fade-up" src="https://preview.iwedding.info/templates/template130/img/sub_icon01.png" alt="">
+                    <div data-aos="fade-up" class="wrap-img-couple mt-3">
+                        <img src="{{$custom['anh_couple_2'] ?? 'https://cdn.biihappy.com/ziiweb/default/template/643d7a25b332be031b02857c/81581f2c556ca55c688e9534970fa5d2.jpg'}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 couple-section section-bg-affect" id="couple">
+        <div class="container-fluid">
+            <h2 data-aos="fade-up" class="section-title text-center m-0">
+                Cô Dâu &amp; Chú Rể
+            </h2>
+            <h3 data-aos="fade-up" class="section-sub-title mb-0 text-center">
+                Giới thiệu một chú rể đẹp trai và cô dâu xinh đẹp
+            </h3>
+            <div class="section-title wrap-people d-flex mt-5">
+                <div class="member member-groom">
+                    <div data-aos="flip-left" class="member-image animation">
+                        <img src="{{$couple['anh_chu_re'] ?? 'https://cdn.biihappy.com/ziiweb/default/website/3b48bc6125ce6d186297a3e90a11085e.jpeg'}}" />
+                    </div>
+                    <div data-aos="fade-left" class="member-name mt-2">
+                        {{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn'}}
+                    </div>
+                    <div class="invitation-groom-parent my-2 d-flex flex-column text-center mb-0 mx-auto">
+                        @if ($couple && $couple['ho_ten_bo_chu_re'])
+                        <div>Con ông: <span class="parent-name">{{$couple['ho_ten_bo_chu_re'] ?? 'Hoàng Anh Kiệt'}}</span></div>
+                        @endif
+
+                        @if ($couple && $couple['ho_ten_me_chu_re'])
+                        <div> Con bà: <span class="parent-name">{{$couple['ho_ten_me_chu_re'] ?? 'Nguyễn Thị Hoài'}}</span></div>
+                        @endif
+                    </div>
+                    <div class="groom-story d-flex flex-column mb-0 mt-1">
+                        <p class="text-story fs-6 text-center mb-0">
+                            {{$couple['gioi_thieu_chu_re']}}
+                        </p>
+                        <a class="fs-6 fw-bold text-center text-decoration-none" tabindex="0" role="button"
+                           data-bs-toggle="popover"
+                           data-bs-trigger="focus"
+                           data-bs-placement="bottom"
+                           data-bs-content="{{$couple['gioi_thieu_chu_re']}}">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="member member-bride">
+                    <div data-aos="flip-right" class="member-image animation">
+                        <img src="{{$couple['anh_co_dau'] ?? 'https://cdn.biihappy.com/ziiweb/default/website/59b631f29bfb9f7cd20437d27ddbe4db.jpeg' }}" />
+                    </div>
+                    <div data-aos="fade-right" class="member-name mt-2">
+                        {{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}}
+                    </div>
+                    <div class="invitation-groom-parent my-2 d-flex flex-column text-center mb-0 mx-auto">
+                        @if ($couple && $couple['ho_ten_bo_co_dau'])
+                        <div>Con ông: <span class="parent-name"> {{$couple['ho_ten_bo_co_dau']}}</span></div>
+                        @endif
+
+                        @if ($couple && $couple['ho_ten_bo_co_dau'])
+                        <div>Con bà: <span class="parent-name">{{$couple['ho_ten_me_co_dau']}}</span></div>
+                        @endif
+                    </div>
+                    <div class="bride-story d-flex flex-column mt-1">
+                        <p class="text-story fs-6 text-center mb-0">
+                            {{$couple['gioi_thieu_co_dau']}}
+                        </p>
+                        <a class="fs-6 fw-bold text-center text-decoration-none" tabindex="0" role="button"
+                           data-bs-toggle="popover"
+                           data-bs-trigger="focus"
+                           data-bs-placement="bottom"
+                           data-bs-content="{{$couple['gioi_thieu_co_dau']}}">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     @if(isset($websiteInfo['su_kien_cuoi']) && $websiteInfo['su_kien_cuoi'])
     <section class="py-5 event-section section-bg-affect" id="event">
         <div class="container-fluid">
@@ -592,6 +656,7 @@
                         <span>TƯ GIA NHÀ NỮ - </span>
                         123 Nguyễn Tất Thành, Hòa Phướng, Hải Châu, Đà Nẵng
                     </p>
+
                     <a href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667" target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
                 </div>
             </div>
@@ -616,7 +681,6 @@
                 <div class="image-wrap" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/83d8a5c840b51447ab080ecb9a7de6df.jpeg');">
                     <div class="dresscode-colors-wrap">
                         <div class="dresscode-colors-event">
-
                         </div>
                     </div>
                 </div>
@@ -650,74 +714,7 @@
         </div>
     </section>
     @endif
-    <section class="py-5 couple-section section-bg-affect" id="couple">
-        <div class="container-fluid">
-            <h2 data-aos="fade-up" class="section-title text-center m-0 mb-5">
-                <img src="https://preview.iwedding.info/templates/template110/img/groombride-title.png" alt="" />
-            </h2>
-            <div id="wrap-couple" class="section-title wrap-people text-center">
-                <div data-aos="fade-up" class="member member-groom py-5">
-                    <div data-aos="fade-up-right" class="wrap-img">
-                        <img src="{{ $couple['anh_chu_re'] ?? 'https://cdn.biihappy.com/ziiweb/default/website/3b48bc6125ce6d186297a3e90a11085e.jpeg'}}" />
-                    </div>
-                    <div class="parent my-2 d-flex flex-column text-center mx-auto">
-                        @if ($couple && $couple['ho_ten_bo_chu_re'])
-                        <div>Con ông: <span class="parent-name">{{$couple['ho_ten_bo_chu_re']}}</span></div>
-                        @endif
-                        @if ($couple && $couple['ho_ten_me_chu_re'])
-                        <div> Con bà: <span class="parent-name">{{$couple['ho_ten_me_chu_re']}}</span></div>
-                        @endif
-                    </div>
-                    <div class="groom-story d-flex flex-column mb-0">
-                        <p class="text-story fs-6 text-center mb-0">
-                            {{substr($couple['gioi_thieu_chu_re'] ?? '', 0, 200)}}...
-                        </p>
-                        <a class="fs-6 fw-bold text-center text-decoration-none text-body" tabindex="0" role="button"
-                           data-bs-toggle="popover"
-                           data-bs-trigger="focus"
-                           data-bs-placement="bottom"
-                           data-bs-content="{{$couple['gioi_thieu_chu_re'] ?? ' Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh'}}">Xem thêm</a>
-                    </div>
-                    <div data-aos="fade-up-left" class="text-center mt-3 wrap-icon d-flex">
-                        <span>*groom <span>{{$couple['ten_chu_re_ngan_gon'] ?? 'Hoàng Kiến Văn'}}  </span></span>
-                        <ul class="d-flex member-contact m-0 social-links px-1">
 
-                        </ul>
-                    </div>
-                </div>
-                <div data-aos="fade-up" class="member member-bride py-5">
-                    <div data-aos="fade-up-right" class="wrap-img">
-                        <img src="{{$couple['anh_co_dau'] ?? 'https://cdn.biihappy.com/ziiweb/default/website/59b631f29bfb9f7cd20437d27ddbe4db.jpeg'}}" />
-                    </div>
-                    <div class="parent my-2 d-flex flex-column text-center mx-auto">
-                        @if ($couple && $couple['ho_ten_bo_co_dau'])
-                        <div>Con ông: <span class="parent-name"> {{$couple['ho_ten_bo_co_dau']}}</span></div>
-                        @endif
-
-                        @if ($couple && $couple['ho_ten_me_co_dau'])
-                        <div>Con bà: <span class="parent-name">{{$couple['ho_ten_me_co_dau']}}</span></div>
-                        @endif
-                    </div>
-                    <div class="bride-story d-flex flex-column">
-                        <p class="text-story fs-6 text-center mb-0">
-                            {{substr($couple['gioi_thieu_co_dau'] ?? '', 0, 200)}}...
-                        </p>
-                        <a class="fs-6 fw-bold text-center text-decoration-none text-body" tabindex="0" role="button"
-                           data-bs-toggle="popover"
-                           data-bs-trigger="focus"
-                           data-bs-placement="bottom"
-                           data-bs-content="{{$couple['gioi_thieu_co_dau']}}">Xem thêm</a>
-                    </div>
-                    <div data-aos="fade-up-left" class="text-center mt-3 wrap-icon d-flex">
-                        <span>*bride <span> {{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}}</span></span>
-                        <ul class="d-flex member-contact m-0 social-links px-1">
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     @if(isset($websiteInfo['phu_dau_phu_re']) && $websiteInfo['phu_dau_phu_re'])
     <section class="py-5 section-sub-title people-section section-bg-affect" id="people">
         <div class="container-fluid">
@@ -773,7 +770,7 @@
                 </h3>
                 <div class="row d-flex justify-content-around donate-box mb-1">
                     <div data-aos="fade-right" class="col-6 mb-4 donate-wrap">
-                        <div class="donate-card p-3 px-4 rounded text-center border-0">
+                        <div class="donate-card p-3 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Đến chú rể</strong>
                             <img class="qr-code-image m-auto mb-2" src="{{$couple['anh_qr_chu_re'] ?? ''}}">
                             <p class="mb-1">Ngân hàng: <strong>{{$couple['ten_ngan_hang_chu_re'] ?? ''}}</strong></p>
@@ -784,9 +781,7 @@
                                 Số tài khoản: <strong>{{$couple['stk_chu_re'] ?? ''}}</strong>
                             </p>
                             <p class="mb-1">Chi nhánh: <strong>{{$couple['chi_nhanh_chu_re'] ?? ''}}</strong></p>
-                            <div class="cryptos-box pt-2 border-top">
 
-                            </div>
                             <div class="cryptos-box-view">
                                 <h5><span class="coin-img"></span> Địa chỉ <span class="coin-id"></span></h5>
                                 <div>
@@ -798,7 +793,7 @@
                         </div>
                     </div>
                     <div data-aos="fade-left" class="col-6 donate-wrap">
-                        <div class="donate-card p-3 px-4 rounded text-center border-0">
+                        <div class="donate-card p-3 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Đến cô dâu</strong>
                             <img class="qr-code-image m-auto mb-2" src="{{$couple['anh_qr_co_dau'] ?? ''}}">
                             <p class="mb-1">Ngân hàng: <strong>{{$couple['ten_ngan_hang_co_dau'] ?? ''}}</strong></p>
@@ -809,9 +804,7 @@
                                 Số tài khoản: <strong>{{$couple['stk_co_dau'] ?? ''}}</strong>
                             </p>
                             <p class="mb-1">Chi nhánh: <strong>{{$couple['chi_nhanh_co_dau'] ?? ''}}</strong></p>
-                            <div class="cryptos-box pt-2 border-top">
 
-                            </div>
                             <div class="cryptos-box-view">
                                 <h5><span class="coin-img"></span> Địa chỉ ví <span class="coin-id"></span></h5>
                                 <div>
@@ -829,18 +822,14 @@
     <section class="py-5 wishes-section section-bg-affect" id="wishes">
         <div class="container-fluid">
             <h2 data-aos="fade-up" class="section-title text-center">
-                {{$custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}
+                {{ $custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}
             </h2>
-            <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
-                Cảm ơn bạn rất nhiều vì đã góp mặt trong đám cưới của chúng tôi!
-            </h3>
-            <div id="section-comment" class="pb-3">
-                <form action="" id="wish-form" class="py-4 mx-4 contact-validation-active">
-
-                </form>
-                <div class="m-3 " id="show-comments">
-                    <div class="box-comment p-3 mx-2 mb-3">
-                        <p id="comment-detail" class="m-0">{{$loicamta['content'] ?? ''}}</p>
+            <div id="section-comment">
+                <div class="p-3 mb-3 " id="show-comments">
+                    <div class="box-comment p-3 mb-3">
+                        <p id="comment-detail" class="m-0">
+                            {{ $loicamta['content'] ?? 'Cảm ơn các bạn đã có mặt để buổi lễ của chúng tôi được thêm phần long trọng'}}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -849,30 +838,10 @@
     <section class="footer-section py-5 text-center section-bg-affect">
         <div class="container-fluid">
             <h3 class="title">Thank you!</h3>
-            <h5 class="sub-title">-- {{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn4'}} & {{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}} --</h5>
+            <h5 class="sub-title">-- {{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn'}} & {{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}} --</h5>
         </div>
     </section>
 </div>
-<section class="opening-section p-5 py-8">
-    <div class="opening_area p-3">
-        <div class="opening_area_inner">
-            <div class="opening-flower text-center">
-                <img src="https://preview.iwedding.info/templates/template110/img/intro-title.png" alt="" />
-            </div>
-            <div class="opening-save text-center">
-                <img src="https://preview.iwedding.info/templates/template110/img/intro-title-2.png" alt="" />
-            </div>
-            <div class="opening-title text-center">
-                <img src="https://preview.iwedding.info/templates/template110/img/intro-title-3.png" alt="" />
-            </div>
-            <div class="sub-intro sub-title text-center">
-                <p class="mb-1">{{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn'}}</p>
-                <p><img src="https://preview.iwedding.info/templates/template110/img/intro-icon-01.png" alt="" /></p>
-                <p class="mb-1">{{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}}</p>
-            </div>
-        </div>
-    </div>
-</section>
 <div class="offcanvas offcanvas-end offcanvas-menu" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true"
      data-bs-backdrop="true" aria-labelledby="offcanvasNavbarLabel">
     <div class="offcanvas-body">
@@ -880,44 +849,32 @@
             <div class="offcanvas-header pb-4 pt-2 px-2 justify-content-end">
                 <button type="button" class="btn-close p-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            @if ($websiteInfo && $websiteInfo->id_video_cuoi)
             <li class="nav-item">
-                <a class="section-sub-title nav-link active" aria-current="page" href="#video">Video Cưới</a>
+                <a class="nav-link active" aria-current="page" href="#video">Video Cưới</a>
             </li>
-            @endif
-            @if(isset($websiteInfo['album']) && $websiteInfo['album'])
             <li class="nav-item">
-                <a class="section-sub-title nav-link active" aria-current="page" href="#gallery">{{$custom['menu_album_hinh_cuoi'] ?? 'Album Hình cưới' }}</a>
+                <a class="nav-link active" aria-current="page" href="#gallery">{{$custom['menu_album_hinh_cuoi'] ?? 'Album Hình cưới' }}</a>
             </li>
-            @endif
             <li class="nav-item">
-                <a class="section-sub-title nav-link active" aria-current="page" href="#invitation">Lời Ngỏ</a>
+                <a class="nav-link active" aria-current="page" href="#story">{{$custom['menu_cau_chuyen_tinh_yeu'] ?? 'Chuyện tình yêu' }}</a>
             </li>
-            @if(isset($websiteInfo['cau_chuyen_tinh_yeu']) && $websiteInfo['cau_chuyen_tinh_yeu'])
             <li class="nav-item">
-                <a class="section-sub-title nav-link active" aria-current="page" href="#story">{{$custom['menu_cau_chuyen_tinh_yeu'] ?? 'Chuyện tình yêu' }}</a>
+                <a class="nav-link active" aria-current="page" href="#invitation">Lời Ngỏ</a>
             </li>
-            @endif
-            @if(isset($websiteInfo['su_kien_cuoi']) && $websiteInfo['su_kien_cuoi'])
             <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#event">{{$custom['menu_su_kien_cuoi'] ?? 'Sự kiện cưới' }}</a>
+                <a class="nav-link active" aria-current="page" href="#couple">Cô Dâu &amp; Chú Rể</a>
             </li>
-            @endif
             <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#couple">Cô Dâu &amp; Chú Rể</a>
+                <a class="nav-link" href="#event">{{$custom['menu_su_kien_cuoi'] ?? 'Sự kiện cưới' }}</a>
             </li>
-            @if(isset($websiteInfo['phu_dau_phu_re']) && $websiteInfo['phu_dau_phu_re'])
             <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#people">{{$custom['menu_phu_dau_phu_re'] ?? 'Phù dâu & Phù rể' }}</a>
+                <a class="nav-link" href="#people">{{$custom['menu_phu_dau_phu_re'] ?? 'Phù dâu & Phù rể' }}</a>
             </li>
-            @endif
-            @if(isset($websiteInfo['loi_cam_ta']) && $websiteInfo['loi_cam_ta'])
             <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#wishes">{{$custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}</a>
+                <a class="nav-link" href="#wishes">{{$custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}</a>
             </li>
-            @endif
             <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#donate">{{$custom['menu_mung_cuoi'] ?? 'Mừng cưới' }}</a>
+                <a class="nav-link" href="#donate">{{$custom['menu_mung_cuoi'] ?? 'Mừng cưới' }}</a>
             </li>
         </ul>
     </div>
@@ -927,7 +884,7 @@
         <span class="donate-modal-close text-danger">&times;</span>
         <div class="w-100 p-4">
             <h2 data-aos="fade-up" class="section-title text-body text-center m-0">
-                Hộp mừng cưới
+                {{$custom['menu_mung_cuoi'] ?? 'Mừng cưới' }}
             </h2>
             <h3 data-aos="fade-up" class="section-sub-title text-body mb-4 text-center">
                 Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như đám cưới của chúng tôi.
@@ -945,6 +902,7 @@
                             Số tài khoản: <strong>{{$couple['stk_chu_re'] ?? ''}}</strong>
                         </p>
                         <p class="mb-1">Chi nhánh: <strong>{{$couple['chi_nhanh_chu_re'] ?? ''}}</strong></p>
+
                         <div class="cryptos-box-view">
                             <h5><span class="coin-img"></span> Địa chỉ <span class="coin-id"></span></h5>
                             <div>
@@ -967,6 +925,7 @@
                             Số tài khoản: <strong>{{$couple['stk_co_dau'] ?? ''}}</strong>
                         </p>
                         <p class="mb-1">Chi nhánh: <strong>{{$couple['chi_nhanh_co_dau'] ?? ''}}</strong></p>
+
                         <div class="cryptos-box-view">
                             <h5><span class="coin-img"></span> Địa chỉ ví <span class="coin-id text-body "></span></h5>
                             <div>
@@ -1001,20 +960,23 @@
 </div>
 <script type="text/javascript">
     const biicore = {
-        template_id: '643d783d4952f55248073b44',
+        template_id: '643d7a25b332be031b02857c',
         templatePremium: ('1' === '1'),
-        themeRoot:'https://preview.iwedding.info/templates/template110',
+        themeRoot:'https://preview.iwedding.info/templates/template130',
         webroot : 'https://preview.iwedding.info',
         coreSite: 'https://biihappy.com',
         webToken: '61990349db8f76231c132068',
         isPremium: ('1' === '1'),
         bgMusic: '{{$websiteInfo['nhac_website'] ?? "https://cdn.biihappy.com/ziiweb/wedding-musics/IDo-911.mp3"}}',
-        alert: JSON.parse('{\"title\":\"L\\u1eddi c\\u1ea3m \\u01a1n t\\u1eeb D\\u00e2u & R\\u1ec3\",\"content\":\"Xin ch\\u00e2n th\\u00e0nh c\\u1ea3m \\u01a1n to\\u00e0n th\\u1ec3 m\\u1ecdi ng\\u01b0\\u1eddi \\u0111\\u00e3 g\\u1eedi l\\u1eddi ch\\u00fac cho v\\u1ee3 ch\\u1ed3ng ch\\u00fang em!\",\"timeout\":5000,\"status\":2,\"cancel_button_text\":\"\"}'), effect: JSON.parse('{\"type\":\"snow\"}'),isAutoPlay: ('1' === '1')};
+        alert: JSON.parse('{\"title\":\"L\\u1eddi c\\u1ea3m \\u01a1n t\\u1eeb D\\u00e2u & R\\u1ec3\",\"content\":\"Xin ch\\u00e2n th\\u00e0nh c\\u1ea3m \\u01a1n to\\u00e0n th\\u1ec3 m\\u1ecdi ng\\u01b0\\u1eddi \\u0111\\u00e3 g\\u1eedi l\\u1eddi ch\\u00fac cho v\\u1ee3 ch\\u1ed3ng ch\\u00fang em!\",\"timeout\":5000,\"status\":2,\"cancel_button_text\":\"\"}'),
+        effect: JSON.parse('{\"type\":\"snow\"}'),
+        isAutoPlay: ('1' === '1')
+    };
 </script>
-<script src="{{asset('template25/js/libs.js?v=20240713')}}"></script>
-<script src="{{asset('template25/js/script.js?v=20240713')}}"></script>
-<script src="{{asset('template25/js/calendar.js?v=20240713')}}"></script>
-<script src="{{asset('template25/js/bii.js?v=20240713')}}"></script>
-<script src="{{asset('template25/js/insertTextAtCursor.js?v=20240713')}}"></script>
+<script src="{{asset('template23/js/calendar.js?v=20240713')}}"></script>
+<script src="{{asset('template23/js/bii.js?v=20240713')}}"></script>
+<script src="{{asset('template23/js/libs.js?v=20240713')}}"></script>
+<script src="{{asset('template23/js/script.js?v=20240713')}}"></script>
+<script src="{{asset('template23/js/insertTextAtCursor.js?v=20240713')}}"></script>
 </body>
 </html>
