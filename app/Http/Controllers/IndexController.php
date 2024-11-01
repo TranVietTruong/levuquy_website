@@ -31,18 +31,18 @@ class IndexController extends Controller
             $templateId = $websiteInfo->template_id;
         }
 
-        $custom = Setup::where('user_id', 1)->where('template_id', $templateId)->first();
+        $custom = Setup::where('user_id', $websiteInfo->user_id)->where('template_id', $templateId)->first();
         if ($custom) {
             $customData = json_decode($custom->data, true);
         } else {
             $customData = [];
         }
-        $couple = CoupleInformation::where('user_id', 1)->first();
-        $loveStories = LoveStory::where('user_id', 1)->orderBy('order')->get();
-        $events = SuKienCuoi::where('user_id', 1)->orderBy('order')->get();
-        $phudau = PhuDau::where('user_id', 1)->first();
-        $albums = Album::where('user_id', 1)->orderBy('order')->get();
-        $loicamta = LoiCamTa::where('user_id', 1)->first();
+        $couple = CoupleInformation::where('user_id', $websiteInfo->user_id)->first();
+        $loveStories = LoveStory::where('user_id', $websiteInfo->user_id)->orderBy('order')->get();
+        $events = SuKienCuoi::where('user_id', $websiteInfo->user_id)->orderBy('order')->get();
+        $phudau = PhuDau::where('user_id', $websiteInfo->user_id)->first();
+        $albums = Album::where('user_id', $websiteInfo->user_id)->orderBy('order')->get();
+        $loicamta = LoiCamTa::where('user_id', $websiteInfo->user_id)->first();
 
         $logo1 = 'V';
         $logo2 = 'H';
