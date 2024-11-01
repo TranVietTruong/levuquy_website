@@ -221,7 +221,7 @@
                                                         <p><span> Chú Rể </span></p>
                                                     </div>
                                                     <div class="the-couple-img col-md-12 col-md-offset-0 col-xs-12">
-                                                        <div class="person-image"> <img src="{{$cuople['anh_chu_re'] ?? 'https://cdn.biihappy.com/ziiweb/default/website/3b48bc6125ce6d186297a3e90a11085e.jpeg'}}"
+                                                        <div class="person-image"> <img src="{{$couple['anh_chu_re'] ?? 'https://cdn.biihappy.com/ziiweb/default/website/3b48bc6125ce6d186297a3e90a11085e.jpeg'}}"
                                                                                         alt="the-couple image" class="img-circle">
                                                             <div class="the-couple-img-hover">
                                                                 <div class="social text-center">
