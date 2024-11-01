@@ -199,7 +199,7 @@
                                                         <h3>{{$couple['ten_co_dau'] ?? 'Ngô Việt Hoài'}}</h3>
                                                         <div class="parent-infos">
                                                             @if ($couple && $couple['ho_ten_bo_co_dau'])
-                                                            <div class="parent-info"><span class="parent-title">Con ông:</span> <span class="parent-name">{$couple['ho_ten_bo_co_dau']}}</span></div>
+                                                            <div class="parent-info"><span class="parent-title">Con ông:</span> <span class="parent-name">{{$couple['ho_ten_bo_co_dau']}}</span></div>
                                                             @endif
 
                                                             @if ($couple && $couple['ho_ten_me_co_dau'])
