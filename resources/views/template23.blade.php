@@ -623,7 +623,7 @@
             @if($events && count($events))
                 @foreach($events as $key => $event)
                     <div data-aos="flip-right" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                        <div class="image-wrap" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/45dfd859dd184042e2a6adaa320ac64b.jpeg');">
+                        <div class="image-wrap" style="background-image: url({{$event['anh'] ?? 'https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/45dfd859dd184042e2a6adaa320ac64b.jpeg'}});">
                             <div class="dresscode-colors-wrap">
                                 <div class="dresscode-colors-event">
 
