@@ -20,7 +20,7 @@ class IndexController extends Controller
         $arr_host = explode('.', $host);
         $subDomain = $arr_host[0] ?? null;
 
-        $websiteInfo = WebsiteInformation::where('link_website', 'le-cuoi-cua-chung-toi')->first();
+        $websiteInfo = WebsiteInformation::where('link_website', $subDomain)->first();
         if (!$websiteInfo) {
             return abort(404);
         }
