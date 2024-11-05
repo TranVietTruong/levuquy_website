@@ -106,7 +106,7 @@
                     </div>
                     <div class="about-couple about-couple-1">
                         <div class="about-top">
-                            <h3>{{$couple['ten_chu_re'] ?? 'Hoàng Kiến Văn'}}</h3>
+                            <h3>{{$couple['ten_chu_re'] ?? 'Hoàng Nguyễn Văn'}}</h3>
                             <div class="cp-social">
 
                             </div>
@@ -122,7 +122,7 @@
                                 @endif
                             </div>
                             <p class="ar">
-                                {{$couple['gioi_thieu_chu_re'] ?? ' Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh'}}
+                                {{$couple['gioi_thieu_chu_re'] ?? ''}}
                             </p>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="about-couple">
                         <div class="about-top">
-                            <h3>{{$couple['ten_co_dau'] ?? 'Ngô Việt Hoài'}}</h3>
+                            <h3>{{$couple['ten_co_dau'] ?? 'Ngô Thúy Hoài'}}</h3>
                             <div class="cp-social">
 
                             </div>
@@ -152,7 +152,7 @@
                                 @endif
                             </div>
                             <p class="al">
-                                {{$couple['gioi_thieu_co_dau'] ?? 'Cô gái đến từ xứ Huế mộng mơ, hiện đang sinh sống và làm việc tại Sài Gòn'}}
+                                {{$couple['gioi_thieu_co_dau'] ?? ''}}
                             </p>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                                                     <h6>{{$loveStory['thoi_gian'] ?? 'December 12 2015'}}</h6>
                                                 </div>
                                                 <p class="wow fadeInRight">
-                                                    {{$loveStory['noi_dung']}}
+                                                    {{$loveStory['noi_dung'] ?? ''}}
                                                 </p>
                                             </div>
                                         </div>
@@ -1081,7 +1081,5 @@
 <script src="{{asset('template1/js/calendar.js')}}"></script>
 <script src="{{asset('template1/js/script.js')}}"></script>
 <script src="{{asset('template1/js/bii.js')}}"></script>
-<script src="{{asset('template1/js/insertTextAtCursor.js')}}"></script>
-{{--<script type="module" src="{{asset('template1/js/init.js')}}"></script>--}}
 </body>
 </html>

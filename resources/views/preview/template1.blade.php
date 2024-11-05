@@ -949,6 +949,5 @@
 <script src="{{asset('template1/js/calendar.js')}}"></script>
 <script src="{{asset('template1/js/script.js')}}"></script>
 <script src="{{asset('template1/js/bii.js')}}"></script>
-<script src="{{asset('template1/js/insertTextAtCursor.js')}}"></script>
 </body>
 </html>
