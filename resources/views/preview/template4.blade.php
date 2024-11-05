@@ -10,16 +10,17 @@
     <meta name="keywords" content="Wedding,Hoàng Kiến Văn,Ngô Việt Hoài,Wedding website, Website đám cưới, Tạo website đám cưới miễn phí">
     <meta name="format-detection" content="telephone=no">
     <meta name="application-name" content="iWedding">
-    <meta name="author" content="Biihappy.com">
+    <meta name="author" content="https://levuquy.info.vn/">
     <meta property="og:site_name" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài Wedding site!">
-    <meta property="og:url" content="https://preview.iwedding.info">
+    <meta property="og:url" content="https://levuquy.info.vn/">
     <meta property="og:description" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài - Our wedding date: 2022-12-22 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại">
     <meta property="og:image" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
     <meta property="og:image:url" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
     <meta property="og:image:secure_url" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
-    <link rel="shortcut icon" type="image/x-icon" href="https://iwedding.info/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/EedZsKg.png">
+
     <link href="https://preview.iwedding.info/templates/template17/css/libs.css?v=20241021" rel="stylesheet">
     <link href="https://preview.iwedding.info/common/calendar.css?v=20241021" rel="stylesheet">
     <link href="https://preview.iwedding.info/templates/template17/css/style.css?v=20241021" rel="stylesheet">
@@ -772,7 +773,7 @@
                     <div class="section-title-simg">
                         <img src="https://preview.iwedding.info/templates/template17/images/section-title2.png" alt="">
                     </div>
-                    <h2>Sổ Lưu Bút</h2>
+                    <h2>Lời cảm tạ</h2>
                     <div class="section-title-img">
                         <div class="round-ball"></div>
                     </div>
@@ -783,12 +784,7 @@
                 <div class="col-12 col-lg-6 col-md-12 ">
                     <div class="wpo-contact-section-wrapper py-1">
                         <div class="wpo-contact-form-area p-0 wish-box">
-                            <div class="wish-box-item ">
-                                <strong>aaahhh</strong>
-                                <p>Chúc mừng ngày trọng đại tới hai bạn. Hạnh phúc bền lâu và trọn vẹn nhé!</p>
-                            </div>
                             <div class="wish-box-item bg">
-                                <strong>CEO của Biihappy</strong>
                                 <p>&quot;Một cuộc hôn nhân thành công đòi hỏi phải yêu nhiều lần, và luôn ở cùng một người&quot; - Chúc cho hai bạn sẽ có được một cuộc hôn nhân viên mãn, trăm năm hạnh phúc!</p>
                             </div>
                         </div>
