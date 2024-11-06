@@ -785,7 +785,12 @@
                     <div class="wpo-contact-section-wrapper py-1">
                         <div class="wpo-contact-form-area p-0 wish-box">
                             <div class="wish-box-item bg">
-                                <p>&quot;Một cuộc hôn nhân thành công đòi hỏi phải yêu nhiều lần, và luôn ở cùng một người&quot; - Chúc cho hai bạn sẽ có được một cuộc hôn nhân viên mãn, trăm năm hạnh phúc!</p>
+                                <p>
+                                    Cảm ơn tất cả những người bạn thân yêu của tôi!
+                                    Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình
+                                    Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi
+                                    Một lần nữa chân thành cảm ơn tất cả các bạn!
+                                </p>
                             </div>
                         </div>
                     </div>

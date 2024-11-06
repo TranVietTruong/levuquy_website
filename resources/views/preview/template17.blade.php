@@ -761,9 +761,11 @@
                         <h1 class="section-title">Lời cảm tạ</h1>
                         <div class="wish-box ">
                             <div class="wish-box-item ">
-                                <strong>CEO của Biihappy</strong>
-                                <p>&quot;Một cuộc hôn nhân thành công đòi hỏi phải yêu nhiều lần, và luôn ở cùng một người&quot; - Chúc cho hai bạn sẽ có được một cuộc hôn nhân viên mãn, trăm năm hạnh phúc!</p>
-                            </div>
+                                <p>  Cảm ơn tất cả những người bạn thân yêu của tôi!
+                                    Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình
+                                    Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi
+                                    Một lần nữa chân thành cảm ơn tất cả các bạn!</p>
+                             </div>
                         </div>
                     </div>
                 </div>
