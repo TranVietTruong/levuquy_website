@@ -93,7 +93,7 @@
                                     </li>
 
                                     <li class="menu-item-has-children">
-                                        <a href="#rsvp">Sổ Lưu Bút</a>
+                                        <a href="#rsvp">Lời cảm tạ</a>
                                     </li>
 
                                     <li class="menu-item-has-children">
