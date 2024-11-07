@@ -997,5 +997,6 @@
 <script src="{{asset('template18/js/bii.js?v=20240713')}}"></script>
 <script src="{{asset('template18/js/libs.js')}}"></script>
 <script src="{{asset('template18/js/script.js')}}"></script>
+<script src="{{asset('template18/js/insertTextAtCursor.js?v=20240713')}}"></script>
 </body>
 </html>
