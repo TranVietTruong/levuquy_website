@@ -584,7 +584,7 @@
                                 </p>
                                 <a class="fw-bold fs-6 d-none text-center text-decoration-none text-white" tabindex="0" role="button" id="btn-show-story"
                                    data-bs-toggle="popover"
-                                   data-bs-title=" {{$couple['ten_chu_re'] ?? 'Kiến Văn'}}"
+                                   data-bs-title="{{$couple['ten_chu_re'] ?? 'Kiến Văn'}}"
                                    data-bs-trigger="focus"
                                    data-bs-placement="bottom"
                                    data-bs-content="{{$couple['gioi_thieu_chu_re'] ?? ''}}">Xem thêm</a>
@@ -617,7 +617,7 @@
                                 </p>
                                 <a class="fw-bold fs-6 d-none text-center text-decoration-none text-white" tabindex="0" role="button" id="btn-show-story"
                                    data-bs-toggle="popover"
-                                   data-bs-title=" {{$couple['ten_co_dau'] ?? 'Việt Hoài'}}"
+                                   data-bs-title="{{$couple['ten_co_dau'] ?? 'Việt Hoài'}}"
                                    data-bs-trigger="focus"
                                    data-bs-placement="bottom"
                                    data-bs-content=" {{$couple['gioi_thieu_co_dau'] ?? ''}}">Xem thêm</a>
@@ -868,24 +868,32 @@
             <li class="nav-item">
                 <a class="section-sub-title nav-link active" aria-current="page" href="#gallery">{{$custom['menu_album_hinh_cuoi'] ?? 'Album Hình cưới' }}</a>
             </li>
-            <li class="nav-item">
-                <a class="section-sub-title nav-link active" aria-current="page" href="#story">{{$custom['menu_cau_chuyen_tinh_yeu'] ?? 'Chuyện tình yêu' }}</a>
-            </li>
+            @if(isset($websiteInfo['cau_chuyen_tinh_yeu']) && $websiteInfo['cau_chuyen_tinh_yeu'])
+                <li class="nav-item">
+                    <a class="section-sub-title nav-link active" aria-current="page" href="#story">{{$custom['menu_cau_chuyen_tinh_yeu'] ?? 'Chuyện tình yêu' }}</a>
+                </li>
+            @endif
             <li class="nav-item">
                 <a class="section-sub-title nav-link active" aria-current="page" href="#invitation">Lời Ngỏ</a>
             </li>
-            <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#event">{{$custom['menu_su_kien_cuoi'] ?? 'Sự kiện cưới' }}</a>
-            </li>
+            @if(isset($websiteInfo['su_kien_cuoi']) && $websiteInfo['su_kien_cuoi'])
+                <li class="nav-item">
+                    <a class="section-sub-title nav-link" href="#event">{{$custom['menu_su_kien_cuoi'] ?? 'Sự kiện cưới' }}</a>
+                </li>
+            @endif
             <li class="nav-item">
                 <a class="section-sub-title nav-link" href="#couple">Cô Dâu &amp; Chú Rể</a>
             </li>
-            <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#people">{{$custom['menu_phu_dau_phu_re'] ?? 'Phù dâu & Phù rể' }}</a>
-            </li>
-            <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#wishes">{{$custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}</a>
-            </li>
+            @if(isset($websiteInfo['phu_dau_phu_re']) && $websiteInfo['phu_dau_phu_re'])
+                <li class="nav-item">
+                    <a class="section-sub-title nav-link" href="#people">{{$custom['menu_phu_dau_phu_re'] ?? 'Phù dâu & Phù rể' }}</a>
+                </li>
+            @endif
+            @if(isset($websiteInfo['loi_cam_ta']) && $websiteInfo['loi_cam_ta'])
+                <li class="nav-item">
+                    <a class="section-sub-title nav-link" href="#wishes">{{$custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}</a>
+                </li>
+            @endif
             <li class="nav-item">
                 <a class="section-sub-title nav-link" href="#donate">{{$custom['menu_mung_cuoi'] ?? 'Mừng cưới' }}</a>
             </li>

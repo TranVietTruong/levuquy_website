@@ -1,33 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hoàng Kiến Văn &amp; Ngô Việt Hoài Wedding site!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài - Our wedding date: 2022-12-22 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại">
-    <meta name="keywords" content="Wedding,Hoàng Kiến Văn,Ngô Việt Hoài,Wedding website, Website đám cưới, Tạo website đám cưới miễn phí">
-    <meta name="format-detection" content="telephone=no">
-    <meta property="og:site_name" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài Wedding site!">
-    <meta property="og:url" content="https://levuquy.info.vn/">
-    <meta property="og:description" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài - Our wedding date: 2022-12-22 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại">
-    <meta property="og:image" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
-    <meta property="og:image:url" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
-    <meta property="og:image:secure_url" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
-    <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/EedZsKg.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    @include('components.header')
+
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"  rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('template20/css/libs.css?v=20240713')}}" />
-    <link rel="stylesheet" href="{{asset('template20/css/style.css?v=20240713')}}" />
-    <link href="{{asset('template20/css/calendar.css?v=20240713')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('template18/css/libs.css')}}" />
+    <link rel="stylesheet" href="{{asset('template18/css/style.css')}}" />
+    <link href="{{asset('template18/css/calendar.css?v=20240713')}}" rel="stylesheet">
 </head>
 <script type="text/javascript">
     var photoGalleries = [];
@@ -35,40 +21,50 @@
 <body>
 <div class="wrapper">
     <header id="header" class="site-header header-style-1 d-none">
+        <meta name="format-detection" content="telephone=no">
         <nav class="navbar bg-white shadow-sm py-1">
             <div class="container-fluid">
                 <div class="w-100 d-flex align-items-center justify-content-between">
-                    <a class="section-title navbar-brand" href="#">V &amp; H</a>
-                    <button class="navbar-toggler rounded-0 border-0 p-0" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <a class="section-title navbar-brand" href="#">{{$logo1}} & {{$logo2}}</a>
+                    <button
+                        class="navbar-toggler rounded-0 border-0 p-0"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                    >
                         <i class="bi bi-list fs-3 text-black"></i>
                     </button>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="banner-section sub-title">
-        <div data-aos="fade-up" class="bgm_area py-4" id="top">
-            <p class="m-0 px-3 text-center">Kiến Văn ♥ Việt Hoài sắp kết hôn.</p>
-        </div>
-        <div class="main_area">
-            <div class="main_image_area">
-                <div data-aos-duration="2000" data-aos="flip-left" class="">
-                    <img src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg">
-                </div>
-                <div class="main_title text-center">
-                    <img src="https://preview.iwedding.info/templates/template133/img/wedding-lable.png" alt="">
+    <section class="banner-section">
+        <div class="main_area p-3">
+            <div class="day_wrapper" data-aos="fade-up" data-aos-delay="500">
+                <div class="day_area p-1 text-center">
+                    <div class="section-sub-title d-flex day_area_inner text-center p-2 py-3">
+                        <p class="m-0 we"> Chúng tôi</p>
+                        <div class="wrap-text">
+                            @if (isset($websiteInfo['ngay_cuoi']))
+                                <p class="day m-0">{{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->day}}</p>
+                                <p class="month m-0">{{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->month}}</p>
+                            @else
+                                <p class="day m-0">04</p>
+                                <p class="month m-0">04</p>
+                            @endif
+                        </div>
+                        <p class="m-0">Sắp kết hôn.</p>
+                    </div>
                 </div>
             </div>
-            <div data-aos="fade-up" class="wedding_area my-3 text-center">
-                <div class="title pt-3 pb-2">
-                    <span class="groom_name">Kiến Văn</span>
-                    <span>♥</span>
-                    <span class="bride_name">Việt Hoài</span>
+            <div class="main_image_area pt-4 pb-8" data-aos="fade-up" data-aos-delay="50">
+                <div class="main_image">
+                    <img src="{{$custom['anh_couple_1'] ?? 'https://cdn.biihappy.com/ziiweb/default/template/643d7aa30be61636f4051958/51a1f26cc14094cc710bf28fa6ed6df0.jpg'}}">
                 </div>
-                <p class="invitation_day mb-0">Thứ 5. 04 / 04 / 2024</p>
-                <div class="day_area_inner pt-2">
-                    04<img src="https://preview.iwedding.info/templates/template133/img/heart-icon.png">04
+                <img class="bg-title" src="https://preview.iwedding.info/templates/template135/img/main_title.png" alt="" />
+                <div class="wrap-name pt-7 px-5 title">
+                    {{$cuople['ten_chu_re_ngan_gon'] ?? 'Kiến Văn'}} <small>&amp;</small> {{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}}
                 </div>
             </div>
         </div>
@@ -76,22 +72,6 @@
     <section class="py-4 accessibilities-section">
         <div class="container-fluid">
             <div class="row gx-2 justify-content-center">
-                <div class="col-sm-4">
-                    <a href="#wishes" class="w-100 mb-1 px-2 accessibility-btn btn btn-secondary"
-                       data-aos="fade-right">
-                        <span class="content-button">
-                        <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/wishes.png" alt="access-btn"> Gửi lời chúc
-                        </span>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://preview.iwedding.info/rsvp" target="_blank"
-                       class="w-100 mb-1 px-2 accessibility-btn btn btn-secondary" data-aos="fade-up">
-                        <span class="content-button">
-                        <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/rsvp4.png" alt="access-btn"> Xác nhận tham dự
-                        </span>
-                    </a>
-                </div>
                 <div class="col-sm-4">
                     <a href="javascript:void(0)" class="w-100 mb-1 accessibility-btn btn btn-secondary buttonDonate"
                        data-aos="fade-left">
@@ -103,6 +83,8 @@
             </div>
         </div>
     </section>
+
+    @if ($websiteInfo && $websiteInfo->id_video_cuoi)
     <section class="py-5 video-section section-bg-affect" id="video">
         <div class="container-fluid">
             <h2 class="section-title text-center" data-aos="fade-up">
@@ -112,22 +94,39 @@
                 Tình yêu không làm cho thế giới quay tròn.
             </h3>
             <div class="ratio ratio-16x9" data-aos="zoom-in">
-                <iframe width="100%" src="https://www.youtube.com/embed/lGUdD29BDMg" title="YouTube video player"
+                <iframe width="100%" src="https://www.youtube.com/embed/{{$websiteInfo->id_video_cuoi}}" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
             </div>
         </div>
     </section>
+    @endif
+
+    @if(isset($websiteInfo['album']) && $websiteInfo['album'])
     <section class="py-5 gallery-section section-bg-affect" id="gallery">
         <div class="container-fluid">
             <h2 class="section-title text-center" data-aos="zoom-in-up">
-                Album Hình Cưới
+                {{$custom['menu_album_hinh_cuoi'] ?? 'Album Hình cưới' }}
             </h2>
             <h3 class="section-sub-title mb-4 text-center" data-aos="zoom-in-up">
                 Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.
             </h3>
             <div class="row gx-2" id="photoGalleryContainer">
+                @if(count($albums))
+                    @foreach($albums as $key => $album)
+                        <script type="text/javascript">
+                            photoGalleries.push({
+                                src : "{{$album['large']}}",
+                                thumb: "{{$album['small']}}",
+                                subHtml: `<div class="lg-sub-html"><h4>{{$album['title']}}</h4></div>`
+                            });
+                        </script>
+                        <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery" data-aos="{{$key % 2 === 0 ? 'fade-right':'fade-left'}}"
+                             data-index="{{$key}}"> <img src="{{$album['small']}}" />
+                        </div>
+                    @endforeach
+                @else
                 <script type="text/javascript">
                     photoGalleries.push({
                         src : "https://cdn.biihappy.com/ziiweb/default/website/galleries/61990296d7e97a1853119579/large.jpg",
@@ -223,6 +222,7 @@
                         subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
                     });
                 </script>
+                @endif
             </div>
             <div class="text-center" data-aos="fade-up">
                 <a href="javascript:void(0)" id="btn-see-more-gallery" class="btn btn-secondary mt-4 btn-see-more-gallery">
@@ -231,18 +231,18 @@
             </div>
         </div>
     </section>
+    @endif
     <section class="py-5 section-sub-title weddingdate-section section-bg-affect" id="weddingdate">
         <div class="container-fluid">
             <div class="w-100">
-                <div class="text-center">
-                    <p class="main_dday_name title py-1 px-3">
-                        Kiến Văn ♥ Việt Hoài
-                    </p>
-                </div>
                 <div class="mini_calendar m-auto pb-3" data-aos="fade-up-right">
                     <div class="mini_calendar">
                         <table>
-                            <caption class="calendar-month">Th&aacute;ng 4 /  2024</caption>
+                            @if (isset($websiteInfo['ngay_cuoi']))
+                                <caption class="calendar-month">Th&aacute;ng {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->month}} /  {{\Carbon\Carbon::parse($websiteInfo['ngay_cuoi'])->year}}</caption>
+                            @else
+                                <caption class="calendar-month">Th&aacute;ng 04 / 2024</caption>
+                            @endif
                             <tr>
                                 <th abbr="Monday">Thứ 2</th>
                                 <th abbr="Tuesday">Thứ 3</th>
@@ -253,62 +253,196 @@
                                 <th abbr="Sunday">CN</th>
                             </tr>
                             <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
                                 <td>
-                                    <div id="today">4</div>
+                                    @if($day === 1)
+                                        <div id="today">1</div>
+                                    @else
+                                        1
+                                    @endif
+
                                 </td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
+                                <td>
+                                    @if($day === 2)
+                                        <div id="today">2</div>
+                                    @else
+                                        2
+                                    @endif
+                                </td>
+                                <td>
+                                    @if($day === 3)
+                                        <div id="today">3</div>
+                                    @else
+                                        3
+                                    @endif
+                                </td>
+                                <td>
+                                    @if($day === 4)
+                                        <div id="today">4</div>
+                                    @else
+                                        4
+                                    @endif
+                                </td>
+                                <td> @if($day === 5)
+                                        <div id="today">5</div>
+                                    @else
+                                        5
+                                    @endif</td>
+                                <td> @if($day === 6)
+                                        <div id="today">6</div>
+                                    @else
+                                        6
+                                    @endif</td>
+                                <td> @if($day === 7)
+                                        <div id="today">7</div>
+                                    @else
+                                        7
+                                    @endif</td>
                             </tr>
                             <tr>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
+                                <td> @if($day === 8)
+                                        <div id="today">8</div>
+                                    @else
+                                        8
+                                    @endif</td>
+                                <td> @if($day === 9)
+                                        <div id="today">9</div>
+                                    @else
+                                        9
+                                    @endif</td>
+                                <td> @if($day === 10)
+                                        <div id="today">10</div>
+                                    @else
+                                        10
+                                    @endif</td>
+                                <td> @if($day === 11)
+                                        <div id="today">11</div>
+                                    @else
+                                        11
+                                    @endif</td>
+                                <td> @if($day === 12)
+                                        <div id="today">12</div>
+                                    @else
+                                        12
+                                    @endif</td>
+                                <td> @if($day === 13)
+                                        <div id="today">13</div>
+                                    @else
+                                        13
+                                    @endif</td>
+                                <td> @if($day === 14)
+                                        <div id="today">14</div>
+                                    @else
+                                        14
+                                    @endif</td>
                             </tr>
                             <tr>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
+                                <td> @if($day === 15)
+                                        <div id="today">15</div>
+                                    @else
+                                        15
+                                    @endif</td>
+                                <td> @if($day === 16)
+                                        <div id="today">16</div>
+                                    @else
+                                        16
+                                    @endif</td>
+                                <td> @if($day === 17)
+                                        <div id="today">17</div>
+                                    @else
+                                        17
+                                    @endif</td>
+                                <td> @if($day === 18)
+                                        <div id="today">18</div>
+                                    @else
+                                        18
+                                    @endif</td>
+                                <td> @if($day === 19)
+                                        <div id="today">19</div>
+                                    @else
+                                        19
+                                    @endif</td>
+                                <td> @if($day === 20)
+                                        <div id="today">20</div>
+                                    @else
+                                        20
+                                    @endif</td>
+                                <td> @if($day === 21)
+                                        <div id="today">21</div>
+                                    @else
+                                        21
+                                    @endif</td>
                             </tr>
                             <tr>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
+                                <td> @if($day === 22)
+                                        <div id="today">22</div>
+                                    @else
+                                        22
+                                    @endif</td>
+                                <td> @if($day === 23)
+                                        <div id="today">23</div>
+                                    @else
+                                        23
+                                    @endif</td>
+                                <td> @if($day === 24)
+                                        <div id="today">24</div>
+                                    @else
+                                        24
+                                    @endif</td>
+                                <td> @if($day === 25)
+                                        <div id="today">25</div>
+                                    @else
+                                        25
+                                    @endif</td>
+                                <td> @if($day === 26)
+                                        <div id="today">26</div>
+                                    @else
+                                        26
+                                    @endif</td>
+                                <td> @if($day === 27)
+                                        <div id="today">27</div>
+                                    @else
+                                        27
+                                    @endif</td>
+                                <td> @if($day === 28)
+                                        <div id="today">28</div>
+                                    @else
+                                        28
+                                    @endif</td>
                             </tr>
                             <tr>
-                                <td>29</td>
-                                <td>30</td>
-                                <td id="emptydays" colspan="5">&nbsp;</td>
+                                <td> @if($day === 29)
+                                        <div id="today">29</div>
+                                    @else
+                                        29
+                                    @endif</td>
+                                <td> @if($day === 30)
+                                        <div id="today">30</div>
+                                    @else
+                                        30
+                                    @endif</td>
+                                <td> @if($day === 31)
+                                        <div id="today">31</div>
+                                    @else
+                                        31
+                                    @endif</td>
+                                <td id="emptydays" colspan="4">&nbsp;</td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="countdown" data-aos="fade-up-left">
-                    <div class="m-auto" id="clock" data-date="2024-04-04" data-text-day="Ngày" data-text-hour="Giờ"
+                    <div class="m-auto" id="clock" data-date="{{$websiteInfo['ngay_cuoi'] ?? '2024-04-04'}}" data-text-day="Ngày" data-text-hour="Giờ"
                          data-text-minute="Phút" data-text-second="Giây"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    @if(isset($websiteInfo['cau_chuyen_tinh_yeu']) && $websiteInfo['cau_chuyen_tinh_yeu'])
     <section class="py-5 story-section section-bg-affect" id="story">
         <div class="container-fluid">
             <h2 data-aos="fade-up" class="section-title text-center">
-                Chuyện tình yêu
+                {{$custom['menu_cau_chuyen_tinh_yeu'] ?? 'Chuyện tình yêu' }}
             </h2>
             <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
                 Tình yêu không chỉ là một danh từ - nó là một động từ; nó còn hơn cả một cảm giác - đó là sự quan tâm, chia sẻ, giúp đỡ, hy sinh.
@@ -316,6 +450,22 @@
             <div class="story-content">
                 <div class="timeline">
                     <div class="outer">
+                        @if(count($loveStories))
+                            @foreach($loveStories as $key => $loveStory)
+                                <div class="timeline-card" data-aos="{{$key % 2 === 0 ? 'fade-right':'fade-left'}}">
+                                    <div class="info">
+                                        <span class="date">{{$loveStory['thoi_gian']}}</span>
+                                        <h3 class="title">{{$loveStory['tieu_de']}}</h3>
+                                        <p>
+                                            {{$loveStory['noi_dung']}}
+                                        </p>
+                                        <div class="img-holder">
+                                            <img src="{{$loveStory['anh']}}" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @else
                         <div class="timeline-card" data-aos="fade-right">
                             <div class="info">
                                 <span class="date">December 12 2015</span>
@@ -364,122 +514,70 @@
                                 </div>
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="invitation-section py-5 px-3 section-bg-affect" id="invitation">
-        <div class="wrap-invitation p-3">
+    @endif
+
+    <section class="py-5 invitation-section section-bg-affect" id="invitation">
+        <div class="container-fluid">
             <div class="w-100">
-                <div data-aos="fade-up" class="couple-img mb-5">
-                    <img src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/aed112329940c37e52ed5218b8302774.jpg">
-                </div>
-                <div data-aos="fade-up" class="wrap-invi-content p-3 pt-8 mb-5">
-                    <div data-aos="fade-left" class="mb-5 title-small">
-                        <p>Lời Ngỏ</p>
-                        <img src="https://preview.iwedding.info/templates/template133/img/sub_title.png">
-                    </div>
-                    <div data-aos="fade-up" class="invitation-content text-center">
-                        Cảm ơn tất cả những người bạn thân yêu của tôi!<br />
-                        Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình…<br />
-                        Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi.<br />
-                        Một lần nữa chân thành cảm ơn tất cả các bạn!
-                    </div>
-                </div>
-                <div data-aos="fade-up"
-                     class="section-sub-title invitation-couple mb-5">
-                    <p class="d-flex text justify-content-center">Kiến Văn <span>
-                            <img src="https://preview.iwedding.info/templates/template133/img/heart-icon.png" alt="">
-                            </span> Việt Hoài
+                <div data-aos="fade-up" class="invation-title">
+                    <h3 class="text-center title m-0">Lời Ngỏ</h3>
+                    <p class="text-center m-0">
                     </p>
                 </div>
+                <div>
+                    <div data-aos="fade-up" class="invitation-content my-5 text-center sub-title">
+                        Cảm ơn tất cả những người bạn thân yêu của tôi!<br />
+                        Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình…<br />
+                        Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi.<br />
+                        Một lần nữa chân thành cảm ơn tất cả các bạn!
+                    </div>
+                    <div data-aos="fade-up" class="couple-img mb-5">
+                        <img src="{{$custom['anh_couple_2'] ?? 'https://cdn.biihappy.com/ziiweb/default/template/643d7aa30be61636f4051958/09757b657c51eee60f1234b0ed444ec1.jpg'}}">
+                    </div>
+                    <div data-aos="fade-up" class="section-title invitation-couple text-center my-5 fs-4">
+                        <p>*Groom/<span> {{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn'}}</span></p>
+                        <p>*Bride/<span> {{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}}</span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="couple-section py-5 section-bg-affect container-fluid px-3" id="couple">
-        <div class="">
-            <div data-aos="fade-up" class="wrap-img-title section-title text-center mb-5">
-                <h2 class="mb-3 section-title">- Groom &amp; Bride -</h2>
-                <p class="sub-title mb-5">Giới thiệu một chú rể đẹp trai và cô dâu xinh đẹp</p>
-                <div class="wrap-img-medal">
-                    <p class="text-center"> Kiến Văn <span>♥</span> Việt Hoài </p>
-                </div>
-            </div>
-            <div class="section-title section-sub-title wrap-people d-flex ">
-                <div class="flip-card member member-groom col">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front p-2 d-flex flex-column justify-content-between border">
-                            <div data-aos="flip-left" class="member-image animation">
-                                <img src="https://cdn.biihappy.com/ziiweb/default/website/3b48bc6125ce6d186297a3e90a11085e.jpeg" />
-                            </div>
-                            <div data-aos="fade-left" class="member-name fs-5 my-2">
-                                to. GROOM
-                            </div>
-                            <div class="invitation-groom-parent d-flex flex-column mx-auto text-center">
-                                <div class="parent-name">Con ông: <span>Hoàng Anh Kiệt</span></div>
-                                <div class="parent-name">Con bà: <span>Nguyễn Thị Hoài</span></div>
-                            </div>
-                        </div>
-                        <div class="flip-card-back d-flex flex-column justify-content-between border">
-                            <div class="h-75 wrap-story my-4 px-2">
-                                <p class="text-hover text-story">
-                                    Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”
-                                </p>
-                                <a class="fw-bold fs-6 d-none text-center text-decoration-none text-white" tabindex="0" role="button" id="btn-show-story"
-                                   data-bs-toggle="popover"
-                                   data-bs-title="Kiến Văn"
-                                   data-bs-trigger="focus"
-                                   data-bs-placement="bottom"
-                                   data-bs-content="Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card member member-bride col">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front p-2 d-flex flex-column justify-content-between border">
-                            <div data-aos="flip-right" class="member-image animation">
-                                <img src="https://cdn.biihappy.com/ziiweb/default/website/59b631f29bfb9f7cd20437d27ddbe4db.jpeg" />
-                            </div>
-                            <div data-aos="fade-right" class="member-name fs-5 my-2">
-                                to. BRIDE
-                            </div>
-                            <div class="invitation-groom-parent d-flex flex-column mx-auto text-center">
-                                <div class="parent-name">Con ông: <span>Ngô Xuân Nghĩa</span></div>
-                                <div class="parent-name">Con bà: <span>Trần Hồng Thắm</span></div>
-                            </div>
-                        </div>
-                        <div class="flip-card-back d-flex flex-column justify-content-between border">
-                            <div class="h-75 wrap-story my-4 px-2">
-                                <p class="text-hover text-story">
-                                    Cô gái đến từ xứ Huế mộng mơ, hiện đang sinh sống và làm việc tại Sài Gòn. Sau khi tốt nghiệp Học viện Báo chí và Tuyên truyền, quyết tâm theo đuổi đam mê làm phóng viên du lịch. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi mèo và nuôi ước mơ có cho mình một vườn hồng khoe sắc.
-                                </p>
-                                <a class="fw-bold fs-6 d-none text-center text-decoration-none text-white" tabindex="0" role="button" id="btn-show-story"
-                                   data-bs-toggle="popover"
-                                   data-bs-title="Việt Hoài"
-                                   data-bs-trigger="focus"
-                                   data-bs-placement="bottom"
-                                   data-bs-content="Cô gái đến từ xứ Huế mộng mơ, hiện đang sinh sống và làm việc tại Sài Gòn. Sau khi tốt nghiệp Học viện Báo chí và Tuyên truyền, quyết tâm theo đuổi đam mê làm phóng viên du lịch. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi mèo và nuôi ước mơ có cho mình một vườn hồng khoe sắc.">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+
+    @if(isset($websiteInfo['su_kien_cuoi']) && $websiteInfo['su_kien_cuoi'])
     <section class="py-5 event-section section-bg-affect" id="event">
         <div class="container-fluid">
             <h2 data-aos="fade-up" class="section-title text-center">
-                Sự Kiện Cưới
+                {{$custom['menu_su_kien_cuoi'] ?? 'Sự kiện cưới' }}
             </h2>
             <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
                 Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
             </h3>
-            <div data-aos="flip-right" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                <div class="image-wrap poisition-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/45dfd859dd184042e2a6adaa320ac64b.jpeg');">
-                    <div class="dresscode-colors-wrap">
-                        <div class="dresscode-colors-event">
+            @if($events && count($events))
+                @foreach($events as $key => $event)
+                    <div data-aos="flip-right" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
+                        <div class="image-wrap" style="background-image: url({{$event['anh'] ?? 'https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/45dfd859dd184042e2a6adaa320ac64b.jpeg'}});">
                         </div>
+                        <div class="info-wrap p-3">
+                            <h5 class="section-sub-title">{{$event['ten_su_kien']}}</h5>
+                            <strong>{{$event['thoi_gian']}}</strong>
+                            <p class="card-text">
+                                {{$event['dia_chi']}}
+                            </p>
+                            <a href="{{$event['map']}}" target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
+                        </div>
+                    </div>
+                @endforeach
+            @else
+            <div data-aos="flip-right" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
+                <div class="image-wrap position-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/45dfd859dd184042e2a6adaa320ac64b.jpeg');">
+                    <div class="dresscode-colors-wrap w-100">
+
                     </div>
                 </div>
                 <div class="info-wrap p-3">
@@ -492,11 +590,10 @@
                     <a href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667" target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
                 </div>
             </div>
-            <div data-aos="flip-left" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                <div class="image-wrap poisition-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/8f7155409bf9ebdb9dffd7a38991aaa8.jpeg');">
-                    <div class="dresscode-colors-wrap">
-                        <div class="dresscode-colors-event">
-                        </div>
+            <div data-aos="flip-left " class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
+                <div class="image-wrap position-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/8f7155409bf9ebdb9dffd7a38991aaa8.jpeg');">
+                    <div class="dresscode-colors-wrap w-100">
+
                     </div>
                 </div>
                 <div class="info-wrap p-3">
@@ -509,10 +606,8 @@
                 </div>
             </div>
             <div data-aos="flip-right" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                <div class="image-wrap poisition-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/83d8a5c840b51447ab080ecb9a7de6df.jpeg');">
-                    <div class="dresscode-colors-wrap">
-                        <div class="dresscode-colors-event">
-                        </div>
+                <div class="image-wrap position-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/83d8a5c840b51447ab080ecb9a7de6df.jpeg');">
+                    <div class="dresscode-colors-wrap w-100">
                     </div>
                 </div>
                 <div class="info-wrap p-3">
@@ -524,12 +619,10 @@
                     <a href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667" target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
                 </div>
             </div>
-            <div data-aos="flip-left" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                <div class="image-wrap poisition-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/194d4b3c58f61adb4931a8a00a4fa019.jpeg');">
-                    <div class="dresscode-colors-wrap">
-                        <div class="dresscode-colors-event">
+            <div data-aos="flip-left " class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
+                <div class="image-wrap position-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/194d4b3c58f61adb4931a8a00a4fa019.jpeg');">
+                    <div class="dresscode-colors-wrap w-100">
 
-                        </div>
                     </div>
                 </div>
                 <div class="info-wrap p-3">
@@ -538,29 +631,107 @@
                     <p class="card-text">
                         Nhà hàng tiệc cưới For You
                     </p>
+
                     <a href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667" target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
+                </div>
+            </div>
+            @endif
+        </div>
+    </section>
+    @endif
+
+    <section class="py-5 couple-section section-bg-affect" id="couple">
+        <div class="container-fluid">
+            <h2 data-aos="fade-up" class="section-title text-center m-0">
+                Cô Dâu &amp; Chú Rể
+            </h2>
+            <!-- <h3 data-aos="fade-up" class="section-sub-title mb-0 text-center">
+                </h3> -->
+            <div class="section-title wrap-people mt-5">
+                <div class="member member-groom mb-5">
+                    <div data-aos="flip-left" class="member-image animation mb-3 text-center">
+                        <img src="{{$couple['anh_chu_re'] ?? 'https://cdn.biihappy.com/ziiweb/default/website/3b48bc6125ce6d186297a3e90a11085e.jpeg'}}" />
+                    </div>
+                    <div class="parent d-flex flex-column mx-auto text-center my-2">
+                        @if ($couple && $couple['ho_ten_bo_chu_re'])
+                            <div class="parent-name">Con ông: <span>{{$couple['ho_ten_bo_chu_re'] ?? 'Hoàng Anh Kiệt'}}</span></div>
+                        @endif
+                        @if ($couple && $couple['ho_ten_me_chu_re'])
+                            <div class="parent-name">Con bà: <span>{{$couple['ho_ten_me_chu_re'] ?? 'Nguyễn Thị Hoài'}}</span></div>
+                        @endif
+                    </div>
+                    <div class="groom-story d-flex flex-column">
+                        <p class="text-story fs-6 text-center m-0">
+                            {{$couple['gioi_thieu_chu_re'] ?? ''}}
+                        </p>
+                        <a class="fs-6 fw-bold text-center mb-2 text-decoration-none" tabindex="0" role="button"
+                           data-bs-toggle="popover"
+                           data-bs-trigger="focus"
+                           data-bs-placement="bottom"
+                           data-bs-content="{{$couple['gioi_thieu_chu_re'] ?? ''}}">Xem thêm</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                            <span data-aos="fade-left" class="member-name m-0">
+                           {{$couple['ten_chu_re'] ?? 'Kiến Văn'}}
+                            </span>
+                        <ul data-aos="fade-up" class="member-contact social-links d-flex p-0 m-0 mx-2">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="member member-bride mt-5">
+                    <div data-aos="flip-right" class="member-image animation mb-3 text-center">
+                        <img src="{{$couple['anh_co_dau'] ?? 'https://cdn.biihappy.com/ziiweb/default/website/59b631f29bfb9f7cd20437d27ddbe4db.jpeg'}}"/>
+                    </div>
+                    <div class="parent d-flex flex-column mx-auto text-center my-2">
+                        @if ($couple && $couple['ho_ten_bo_co_dau'])
+                            <div class="parent-name">Con ông: <span>{{$couple['ho_ten_bo_co_dau']}}</span></div>
+                        @endif
+                        @if ($couple && $couple['ho_ten_me_dau'])
+                            <div class="parent-name">Con bà: <span>{{$couple['ho_ten_me_co_dau']}}</span></div>
+                        @endif
+                    </div>
+                    <div class="bride-story d-flex flex-column">
+                        <p class="text-story fs-6 text-center m-0">
+                            {{$couple['gioi_thieu_co_dau'] ?? ''}}
+                        </p>
+                        <a class="fs-6 fw-bold text-center mb-2 text-decoration-none" tabindex="0" role="button"
+                           data-bs-toggle="popover"
+                           data-bs-trigger="focus"
+                           data-bs-placement="bottom"
+                           data-bs-content="{{$couple['gioi_thieu_co_dau'] ?? ''}}">Xem thêm</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                            <span data-aos="fade-left" class="member-name m-0">
+                                {{$couple['ten_co_dau'] ?? 'Việt Hoài'}}
+                            </span>
+                        <ul data-aos="fade-up" class="member-contact social-links d-flex p-0 m-0 mx-2">
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-5 people-section section-bg-affect" id="people">
+
+    @if(isset($websiteInfo['phu_dau_phu_re']) && $websiteInfo['phu_dau_phu_re'])
+    <section class="py-5 section-sub-title people-section section-bg-affect" id="people">
         <div class="container-fluid">
             <h2 data-aos="fade-up" class="section-title text-center">
                 Phù Dâu &amp; Phù Rể
             </h2>
             <h3 data-aos="fade-up" class="section-sub-title mb-0 text-center">
-                Tình yêu không có rào cản. Nó nhảy rào, nhảy rào, xuyên tường để đến đích với đầy hy vọng.
             </h3>
             <div class="row">
                 <div data-aos="fade-right" class="col-12 col-sm-6">
                     <div class="w-100 mt-5">
                         <div class="rounded-circle people-avatar w-75 m-auto mb-3">
-                            <img src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/fa1780c6fe429eff4f2d564d6fbaff98.jpeg" class="card-img-top" alt="..." />
+                            <img src="{{$phudau['anh_phu_dau'] ?? 'https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/84729db4c190b37df0a2cdcedba3f9b2.jpeg'}}" class="card-img-top" alt="..." />
                         </div>
                         <div class="text-center">
-                            <h6 class="section-sub-title title">Lý Mạc Sầu</h6>
+                            <h6 class="section-sub-title title">{{$phudau['ten_phu_dau'] ?? 'Phạm Đoan Trang'}}</h6>
                             <p class="people-content">
-                                Là cô gái đến từ vùng đất Cố Đô “Huế mộng Huế mơ” dịu dàng, nết na và thùy mị. Với nhiều tài lẻ như biết nấu ăn, cắm hoa, thêu thùa may vá.
+                                {{$phudau['gioi_thieu_phu_dau'] ?? ''}}
                             </p>
                             <ul class="social-links m-0 p-0">
                             </ul>
@@ -570,12 +741,12 @@
                 <div data-aos="fade-left" class="col-12 col-sm-6">
                     <div class="w-100 mt-5">
                         <div class="rounded-circle people-avatar w-75 m-auto mb-3">
-                            <img src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/0a6cfab9e637b586cec8724825f99d9e.jpeg" class="card-img-top" alt="..." />
+                            <img src="{{$phudau['anh_phu_re'] ?? 'https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/0a6cfab9e637b586cec8724825f99d9e.jpeg'}}" class="card-img-top" alt="..." />
                         </div>
                         <div class="text-center">
-                            <h6 class="section-sub-title title">Trần Đức Minh</h6>
+                            <h6 class="section-sub-title title">{{$phudau['ten_phu_re'] ?? 'Lý Mạc Sầu'}}</h6>
                             <p class="people-content">
-                                Chàng trai sinh năm 1996 tại Bình Dương, từng là sinh viên Đại học Kinh tế TP. Hồ Chí Minh. Hiện tại, đang làm nhân viên tín dụng ngân hàng.
+                                {{$phudau['gioi_thieu_phu_re'] ?? ''}}
                             </p>
                             <ul class="social-links m-0 p-0">
                             </ul>
@@ -585,28 +756,31 @@
             </div>
         </div>
     </section>
+    @endif
+
     <section class="py-5 donate-section section-bg-affect" id="donate">
         <div class="container-fluid ">
             <div class="w-100">
                 <h2 data-aos="fade-up" class="section-title text-center m-0">
-                    Hộp mừng cưới
+                    {{$custom['menu_mung_cuoi'] ?? 'Mừng cưới' }}
                 </h2>
                 <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
                     Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như đám cưới của chúng tôi.
                 </h3>
                 <div class="row d-flex justify-content-around donate-box mb-1">
                     <div data-aos="fade-right" class="col-6 mb-4 donate-wrap">
-                        <div class="donate-card p-3 rounded text-center">
+                        <div class="donate-card p-3 px-3 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Đến chú rể</strong>
-                            <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/49bc348db7eb284d9fc249b9d958893b.jpeg"/>
-                            <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
+                            <img class="qr-code-image m-auto mb-2" src="{{$couple['anh_qr_chu_re'] ?? ''}}">
+                            <p class="mb-1">Ngân hàng: <strong>{{$couple['ten_ngan_hang_chu_re'] ?? ''}}</strong></p>
                             <p class="mb-1">
-                                Tên tài khoản: <strong>12345678910</strong>
+                                Tên tài khoản: <strong>{{$couple['ten_chu_tai_khoan_chu_re'] ?? ''}}</strong>
                             </p>
                             <p class="mb-1">
-                                Số tài khoản: <strong>Hoàng Kiến Văn</strong>
+                                Số tài khoản: <strong>{{$couple['stk_chu_re'] ?? ''}}</strong>
                             </p>
-                            <p class="mb-1">Chi nhánh: <strong>TP.HCM</strong></p>
+                            <p class="mb-1">Chi nhánh: <strong>{{$couple['chi_nhanh_chu_re'] ?? ''}}</strong></p>
+
                             <div class="cryptos-box pt-2 border-top">
 
                             </div>
@@ -621,17 +795,17 @@
                         </div>
                     </div>
                     <div data-aos="fade-left" class="col-6 donate-wrap">
-                        <div class="donate-card p-3 rounded text-center">
+                        <div class="donate-card p-3 px-4 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Đến cô dâu</strong>
-                            <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/24343a45a211dedc5b1b0b57300eaba9.jpeg"/>
-                            <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
+                            <img class="qr-code-image m-auto mb-2" src="{{$couple['anh_qr_co_dau'] ?? ''}}">
+                            <p class="mb-1">Ngân hàng: <strong>{{$couple['ten_ngan_hang_co_dau'] ?? ''}}</strong></p>
                             <p class="mb-1">
-                                Tên tài khoản: <strong>12345678910</strong>
+                                Tên tài khoản: <strong>{{$couple['ten_chu_tai_khoan_co_dau'] ?? ''}}</strong>
                             </p>
                             <p class="mb-1">
-                                Số tài khoản: <strong>Ngô Việt Hoài</strong>
+                                Số tài khoản: <strong>{{$couple['stk_co_dau'] ?? ''}}</strong>
                             </p>
-                            <p class="mb-1">Chi nhánh: <strong>TP.HCM</strong></p>
+                            <p class="mb-1">Chi nhánh: <strong>{{$couple['chi_nhanh_co_dau'] ?? ''}}</strong></p>
                             <div class="cryptos-box pt-2 border-top">
 
                             </div>
@@ -649,32 +823,30 @@
             </div>
         </div>
     </section>
+
+    @if(isset($websiteInfo['loi_cam_ta']) && $websiteInfo['loi_cam_ta'])
     <section class="py-5 wishes-section section-bg-affect" id="wishes">
         <div class="container-fluid">
             <h2 data-aos="fade-up" class="section-title text-center">
-                Lời cảm tạ
+                {{$custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}
             </h2>
             <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
-                Cảm ơn bạn rất nhiều vì đã đến đám cưới của chúng tôi!
+                Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
             </h3>
             <div id="section-comment">
-                <div class="p-3 mb-3 " id="show-comments">
-                    <div class="box-comment p-3 mb-3">
+                <div class="mt-3 px-4 py-3 " id="show-comments">
+                    <div class="box-comment pb-3">
                         <p id="comment-detail" class="m-0">
-                            Cảm ơn tất cả những người bạn thân yêu của tôi!
-                            Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình
-                            Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi
-                            Một lần nữa chân thành cảm ơn tất cả các bạn!
-                        </p>
+                            {{ $loicamta['content'] ?? 'Cảm ơn các bạn đã có mặt để buổi lễ của chúng tôi được thêm phần long trọng'}}</p>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section class="footer-section py-5 text-center section-bg-affect">
+    @endif
+    <section class="section-title footer-section py-5 text-center section-bg-affect">
         <div class="container-fluid">
             <h3 class="title">Thank you!</h3>
-            <h5 class="sub-title">-- Kiến Văn & Việt Hoài --</h5>
+            <h5 class="sub-title">--  {{$couple['ten_chu_re_ngan_gon'] ?? 'Kiến Văn'}} & {{$couple['ten_co_dau_ngan_gon'] ?? 'Việt Hoài'}} --</h5>
         </div>
     </section>
 </div>
@@ -689,33 +861,41 @@
                 <a class="section-sub-title nav-link active" aria-current="page" href="#video">Video Cưới</a>
             </li>
             <li class="nav-item">
-                <a class="section-sub-title nav-link active" aria-current="page" href="#gallery">Album Hình Cưới</a>
+                <a class="section-sub-title nav-link active" aria-current="page" href="#gallery">{{$custom['menu_album_hinh_cuoi'] ?? 'Album Hình cưới' }}</a>
             </li>
+            @if(isset($websiteInfo['cau_chuyen_tinh_yeu']) && $websiteInfo['cau_chuyen_tinh_yeu'])
             <li class="nav-item">
-                <a class="section-sub-title nav-link active" aria-current="page" href="#story">Chuyện tình yêu</a>
+                <a class="section-sub-title nav-link active" aria-current="page" href="#story">{{$custom['menu_cau_chuyen_tinh_yeu'] ?? 'Chuyện tình yêu' }}</a>
             </li>
+            @endif
             <li class="nav-item">
                 <a class="section-sub-title nav-link active" aria-current="page" href="#invitation">Lời Ngỏ</a>
             </li>
+            @if(isset($websiteInfo['su_kien_cuoi']) && $websiteInfo['su_kien_cuoi'])
             <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#event">Sự kiện cưới</a>
+                <a class="section-sub-title nav-link" href="#event">{{$custom['menu_su_kien_cuoi'] ?? 'Sự kiện cưới' }}</a>
             </li>
+            @endif
             <li class="nav-item">
                 <a class="section-sub-title nav-link" href="#couple">Cô Dâu &amp; Chú Rể</a>
             </li>
+            @if(isset($websiteInfo['phu_dau_phu_re']) && $websiteInfo['phu_dau_phu_re'])
             <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#people">Phù Dâu &amp; Phù Rể</a>
+                <a class="section-sub-title nav-link" href="#people">{{$custom['menu_phu_dau_phu_re'] ?? 'Phù dâu & Phù rể' }}</a>
             </li>
+            @endif
+            @if(isset($websiteInfo['loi_cam_ta']) && $websiteInfo['loi_cam_ta'])
             <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#wishes">Sổ Lưu Bút</a>
+                <a class="section-sub-title nav-link" href="#wishes">{{$custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}</a>
             </li>
+            @endif
             <li class="nav-item">
-                <a class="section-sub-title nav-link" href="#donate">Mừng cưới</a>
+                <a class="section-sub-title nav-link" href="#donate">{{$custom['menu_mung_cuoi'] ?? 'Mừng cưới' }}</a>
             </li>
         </ul>
     </div>
 </div>
-<div class="py-5 donate-section donate-modal" id="donate-modal">
+<div class="py-5 donate-section donate-modal section-bg-affect" id="donate-modal">
     <div class="container-fluid donate-modal-content">
         <span class="donate-modal-close text-danger">&times;</span>
         <div class="w-100 p-4">
@@ -726,20 +906,19 @@
                 Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như đám cưới của chúng tôi.
             </h3>
             <div class="row justify-content-center donate-box mb-1">
-                <div data-aos="fade-right" class="col-6 px-4  mb-4">
+                <div data-aos="fade-right" class="col-6 px-4 mb-4">
                     <div class="donate-card p-4 rounded text-center">
                         <strong class="d-block sub-title mb-2 text-uppercase">Đến chú rể</strong>
-                        <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/49bc348db7eb284d9fc249b9d958893b.jpeg"/>
-                        <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
+                        <img class="qr-code-image m-auto mb-2" src="{{$couple['anh_qr_chu_re'] ?? ''}}">
+                        <p class="mb-1">Ngân hàng: <strong>{{$couple['ten_ngan_hang_chu_re'] ?? ''}}</strong></p>
                         <p class="mb-1">
-                            Tên tài khoản: <strong>12345678910</strong>
+                            Tên tài khoản: <strong>{{$couple['ten_chu_tai_khoan_chu_re'] ?? ''}}</strong>
                         </p>
                         <p class="mb-1">
-                            Số tài khoản: <strong>Hoàng Kiến Văn</strong>
+                            Số tài khoản: <strong>{{$couple['stk_chu_re'] ?? ''}}</strong>
                         </p>
-                        <p class="mb-1">Chi nhánh: <strong>TP.HCM</strong></p>
+                        <p class="mb-1">Chi nhánh: <strong>{{$couple['chi_nhanh_chu_re'] ?? ''}}</strong></p>
                         <div class="cryptos-box pt-2 border-top">
-
                         </div>
                         <div class="cryptos-box-view">
                             <h5><span class="coin-img"></span> Địa chỉ <span class="coin-id"></span></h5>
@@ -754,15 +933,15 @@
                 <div data-aos="fade-left" class="col-6 px-4 ">
                     <div class="donate-card p-4 rounded text-center">
                         <strong class="d-block sub-title mb-2 text-uppercase">Đến cô dâu</strong>
-                        <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/24343a45a211dedc5b1b0b57300eaba9.jpeg"/>
-                        <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
+                        <img class="qr-code-image m-auto mb-2" src="{{$couple['anh_qr_co_dau'] ?? ''}}">
+                        <p class="mb-1">Ngân hàng: <strong>{{$couple['ten_ngan_hang_co_dau'] ?? ''}}</strong></p>
                         <p class="mb-1">
-                            Tên tài khoản: <strong>12345678910</strong>
+                            Tên tài khoản: <strong>{{$couple['ten_chu_tai_khoan_co_dau'] ?? ''}}</strong>
                         </p>
                         <p class="mb-1">
-                            Số tài khoản: <strong>Ngô Việt Hoài</strong>
+                            Số tài khoản: <strong>{{$couple['stk_co_dau'] ?? ''}}</strong>
                         </p>
-                        <p class="mb-1">Chi nhánh: <strong>TP.HCM</strong></p>
+                        <p class="mb-1">Chi nhánh: <strong>{{$couple['chi_nhanh_co_dau'] ?? ''}}</strong></p>
                         <div class="cryptos-box pt-2 border-top">
 
                         </div>
@@ -800,23 +979,23 @@
 </div>
 <script type="text/javascript">
     const biicore = {
-        template_id: '643d7a7706109e990f016274',
+        template_id: '643d7aa30be61636f4051958',
         templatePremium: ('1' === '1'),
-        themeRoot:'https://preview.iwedding.info/templates/template133',
+        themeRoot:'https://preview.iwedding.info/templates/template135',
         webroot : 'https://preview.iwedding.info',
         coreSite: 'https://biihappy.com',
         webToken: '61990349db8f76231c132068',
         isPremium: ('1' === '1'),
-        bgMusic: 'https://cdn.biihappy.com/ziiweb/wedding-musics/IDo-911.mp3',
+        bgMusic: '{{$websiteInfo['nhac_website'] ?? "https://cdn.biihappy.com/ziiweb/wedding-musics/IDo-911.mp3"}}',
         alert: JSON.parse('{\"title\":\"L\\u1eddi c\\u1ea3m \\u01a1n t\\u1eeb D\\u00e2u & R\\u1ec3\",\"content\":\"Xin ch\\u00e2n th\\u00e0nh c\\u1ea3m \\u01a1n to\\u00e0n th\\u1ec3 m\\u1ecdi ng\\u01b0\\u1eddi \\u0111\\u00e3 g\\u1eedi l\\u1eddi ch\\u00fac cho v\\u1ee3 ch\\u1ed3ng ch\\u00fang em!\",\"timeout\":5000,\"status\":2,\"cancel_button_text\":\"\"}'),
         effect: JSON.parse('{\"type\":\"snow\"}'),
         isAutoPlay: ('1' === '1')
     };
 </script>
-<script src="{{asset('template20/js/libs.js?v=20240713')}}"></script>
-<script src="{{asset('template20/js/script.js?v=20240713')}}"></script>
-<script src="{{asset('template20/js/calendar.js?v=20240713')}}"></script>
-<script src="{{asset('template20/js/bii.js?v=20240713')}}"></script>
-<script src="{{asset('template20/js/insertTextAtCursor.js?v=20240713')}}"></script>
+<script type="text/javascript" src="{{asset('template18/js/jquery-plugin-collection.js?v=20240713')}}"></script>
+<script src="{{asset('template18/js/calendar.js?v=20240713')}}"></script>
+<script src="{{asset('template18/js/bii.js?v=20240713')}}"></script>
+<script src="{{asset('template18/js/libs.js')}}"></script>
+<script src="{{asset('template18/js/script.js')}}"></script>
 </body>
 </html>

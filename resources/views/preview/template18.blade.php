@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hoàng Kiến Văn &amp; Ngô Việt Hoài Wedding site!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài - Our wedding date: 2022-12-22 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại">
@@ -12,22 +11,20 @@
     <meta property="og:site_name" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài Wedding site!">
-    <meta property="og:url" content="https://levuquy.info.vn/">
+    <meta property="og:url" content="https://levuquy.info.vn">
     <meta property="og:description" content="Hoàng Kiến Văn &amp; Ngô Việt Hoài - Our wedding date: 2022-12-22 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại">
     <meta property="og:image" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
     <meta property="og:image:url" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
     <meta property="og:image:secure_url" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
     <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/EedZsKg.png">
-
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"  rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('template20/css/libs.css?v=20240713')}}" />
-    <link rel="stylesheet" href="{{asset('template20/css/style.css?v=20240713')}}" />
-    <link href="{{asset('template20/css/calendar.css?v=20240713')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('template18/css/libs.css')}}" />
+    <link rel="stylesheet" href="{{asset('template18/css/style.css')}}" />
+    <link href="{{asset('template18/css/calendar.css?v=20240713')}}" rel="stylesheet">
 </head>
 <script type="text/javascript">
     var photoGalleries = [];
@@ -35,40 +32,45 @@
 <body>
 <div class="wrapper">
     <header id="header" class="site-header header-style-1 d-none">
+        <meta name="format-detection" content="telephone=no">
         <nav class="navbar bg-white shadow-sm py-1">
             <div class="container-fluid">
                 <div class="w-100 d-flex align-items-center justify-content-between">
-                    <a class="section-title navbar-brand" href="#">V &amp; H</a>
-                    <button class="navbar-toggler rounded-0 border-0 p-0" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <a class="section-title navbar-brand" href="#">V & H</a>
+                    <button
+                        class="navbar-toggler rounded-0 border-0 p-0"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                    >
                         <i class="bi bi-list fs-3 text-black"></i>
                     </button>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="banner-section sub-title">
-        <div data-aos="fade-up" class="bgm_area py-4" id="top">
-            <p class="m-0 px-3 text-center">Kiến Văn ♥ Việt Hoài sắp kết hôn.</p>
-        </div>
-        <div class="main_area">
-            <div class="main_image_area">
-                <div data-aos-duration="2000" data-aos="flip-left" class="">
-                    <img src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg">
-                </div>
-                <div class="main_title text-center">
-                    <img src="https://preview.iwedding.info/templates/template133/img/wedding-lable.png" alt="">
+    <section class="banner-section">
+        <div class="main_area p-3">
+            <div class="day_wrapper" data-aos="fade-up" data-aos-delay="500">
+                <div class="day_area p-1 text-center">
+                    <div class="section-sub-title d-flex day_area_inner text-center p-2 py-3">
+                        <p class="m-0 we"> Chúng tôi</p>
+                        <div class="wrap-text">
+                            <p class="day m-0">04</p>
+                            <p class="month m-0">04</p>
+                        </div>
+                        <p class="m-0">Sắp kết hôn.</p>
+                    </div>
                 </div>
             </div>
-            <div data-aos="fade-up" class="wedding_area my-3 text-center">
-                <div class="title pt-3 pb-2">
-                    <span class="groom_name">Kiến Văn</span>
-                    <span>♥</span>
-                    <span class="bride_name">Việt Hoài</span>
+            <div class="main_image_area pt-4 pb-8" data-aos="fade-up" data-aos-delay="50">
+                <div class="main_image">
+                    <img src="https://cdn.biihappy.com/ziiweb/default/template/643d7aa30be61636f4051958/51a1f26cc14094cc710bf28fa6ed6df0.jpg">
                 </div>
-                <p class="invitation_day mb-0">Thứ 5. 04 / 04 / 2024</p>
-                <div class="day_area_inner pt-2">
-                    04<img src="https://preview.iwedding.info/templates/template133/img/heart-icon.png">04
+                <img class="bg-title" src="https://preview.iwedding.info/templates/template135/img/main_title.png" alt="" />
+                <div class="wrap-name pt-7 px-5 title">
+                    Kiến Văn <small>&amp;</small> Việt Hoài
                 </div>
             </div>
         </div>
@@ -76,22 +78,6 @@
     <section class="py-4 accessibilities-section">
         <div class="container-fluid">
             <div class="row gx-2 justify-content-center">
-                <div class="col-sm-4">
-                    <a href="#wishes" class="w-100 mb-1 px-2 accessibility-btn btn btn-secondary"
-                       data-aos="fade-right">
-                        <span class="content-button">
-                        <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/wishes.png" alt="access-btn"> Gửi lời chúc
-                        </span>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://preview.iwedding.info/rsvp" target="_blank"
-                       class="w-100 mb-1 px-2 accessibility-btn btn btn-secondary" data-aos="fade-up">
-                        <span class="content-button">
-                        <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/rsvp4.png" alt="access-btn"> Xác nhận tham dự
-                        </span>
-                    </a>
-                </div>
                 <div class="col-sm-4">
                     <a href="javascript:void(0)" class="w-100 mb-1 accessibility-btn btn btn-secondary buttonDonate"
                        data-aos="fade-left">
@@ -234,11 +220,6 @@
     <section class="py-5 section-sub-title weddingdate-section section-bg-affect" id="weddingdate">
         <div class="container-fluid">
             <div class="w-100">
-                <div class="text-center">
-                    <p class="main_dday_name title py-1 px-3">
-                        Kiến Văn ♥ Việt Hoài
-                    </p>
-                </div>
                 <div class="mini_calendar m-auto pb-3" data-aos="fade-up-right">
                     <div class="mini_calendar">
                         <table>
@@ -369,103 +350,31 @@
             </div>
         </div>
     </section>
-    <section class="invitation-section py-5 px-3 section-bg-affect" id="invitation">
-        <div class="wrap-invitation p-3">
+    <section class="py-5 invitation-section section-bg-affect" id="invitation">
+        <div class="container-fluid">
             <div class="w-100">
-                <div data-aos="fade-up" class="couple-img mb-5">
-                    <img src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/aed112329940c37e52ed5218b8302774.jpg">
+                <div data-aos="fade-up" class="invation-title">
+                    <h3 class="text-center title m-0">Lời Ngỏ</h3>
+                    <p class="text-center m-0">
+                    </p>
                 </div>
-                <div data-aos="fade-up" class="wrap-invi-content p-3 pt-8 mb-5">
-                    <div data-aos="fade-left" class="mb-5 title-small">
-                        <p>Lời Ngỏ</p>
-                        <img src="https://preview.iwedding.info/templates/template133/img/sub_title.png">
-                    </div>
-                    <div data-aos="fade-up" class="invitation-content text-center">
+                <div>
+                    <div data-aos="fade-up" class="invitation-content my-5 text-center sub-title">
                         Cảm ơn tất cả những người bạn thân yêu của tôi!<br />
-                        Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình…<br />
-                        Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi.<br />
+                        Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình…<br />
+                        Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi.<br />
                         Một lần nữa chân thành cảm ơn tất cả các bạn!
                     </div>
-                </div>
-                <div data-aos="fade-up"
-                     class="section-sub-title invitation-couple mb-5">
-                    <p class="d-flex text justify-content-center">Kiến Văn <span>
-                            <img src="https://preview.iwedding.info/templates/template133/img/heart-icon.png" alt="">
-                            </span> Việt Hoài
-                    </p>
+                    <div data-aos="fade-up" class="couple-img mb-5">
+                        <img src="https://cdn.biihappy.com/ziiweb/default/template/643d7aa30be61636f4051958/09757b657c51eee60f1234b0ed444ec1.jpg">
+                    </div>
+                    <div data-aos="fade-up" class="section-title invitation-couple text-center my-5 fs-4">
+                        <p>*Groom/<span> Kiến Văn</span></p>
+                        <p>*Bride/<span> Việt Hoài</span></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="couple-section py-5 section-bg-affect container-fluid px-3" id="couple">
-        <div class="">
-            <div data-aos="fade-up" class="wrap-img-title section-title text-center mb-5">
-                <h2 class="mb-3 section-title">- Groom &amp; Bride -</h2>
-                <p class="sub-title mb-5">Giới thiệu một chú rể đẹp trai và cô dâu xinh đẹp</p>
-                <div class="wrap-img-medal">
-                    <p class="text-center"> Kiến Văn <span>♥</span> Việt Hoài </p>
-                </div>
-            </div>
-            <div class="section-title section-sub-title wrap-people d-flex ">
-                <div class="flip-card member member-groom col">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front p-2 d-flex flex-column justify-content-between border">
-                            <div data-aos="flip-left" class="member-image animation">
-                                <img src="https://cdn.biihappy.com/ziiweb/default/website/3b48bc6125ce6d186297a3e90a11085e.jpeg" />
-                            </div>
-                            <div data-aos="fade-left" class="member-name fs-5 my-2">
-                                to. GROOM
-                            </div>
-                            <div class="invitation-groom-parent d-flex flex-column mx-auto text-center">
-                                <div class="parent-name">Con ông: <span>Hoàng Anh Kiệt</span></div>
-                                <div class="parent-name">Con bà: <span>Nguyễn Thị Hoài</span></div>
-                            </div>
-                        </div>
-                        <div class="flip-card-back d-flex flex-column justify-content-between border">
-                            <div class="h-75 wrap-story my-4 px-2">
-                                <p class="text-hover text-story">
-                                    Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”
-                                </p>
-                                <a class="fw-bold fs-6 d-none text-center text-decoration-none text-white" tabindex="0" role="button" id="btn-show-story"
-                                   data-bs-toggle="popover"
-                                   data-bs-title="Kiến Văn"
-                                   data-bs-trigger="focus"
-                                   data-bs-placement="bottom"
-                                   data-bs-content="Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card member member-bride col">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front p-2 d-flex flex-column justify-content-between border">
-                            <div data-aos="flip-right" class="member-image animation">
-                                <img src="https://cdn.biihappy.com/ziiweb/default/website/59b631f29bfb9f7cd20437d27ddbe4db.jpeg" />
-                            </div>
-                            <div data-aos="fade-right" class="member-name fs-5 my-2">
-                                to. BRIDE
-                            </div>
-                            <div class="invitation-groom-parent d-flex flex-column mx-auto text-center">
-                                <div class="parent-name">Con ông: <span>Ngô Xuân Nghĩa</span></div>
-                                <div class="parent-name">Con bà: <span>Trần Hồng Thắm</span></div>
-                            </div>
-                        </div>
-                        <div class="flip-card-back d-flex flex-column justify-content-between border">
-                            <div class="h-75 wrap-story my-4 px-2">
-                                <p class="text-hover text-story">
-                                    Cô gái đến từ xứ Huế mộng mơ, hiện đang sinh sống và làm việc tại Sài Gòn. Sau khi tốt nghiệp Học viện Báo chí và Tuyên truyền, quyết tâm theo đuổi đam mê làm phóng viên du lịch. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi mèo và nuôi ước mơ có cho mình một vườn hồng khoe sắc.
-                                </p>
-                                <a class="fw-bold fs-6 d-none text-center text-decoration-none text-white" tabindex="0" role="button" id="btn-show-story"
-                                   data-bs-toggle="popover"
-                                   data-bs-title="Việt Hoài"
-                                   data-bs-trigger="focus"
-                                   data-bs-placement="bottom"
-                                   data-bs-content="Cô gái đến từ xứ Huế mộng mơ, hiện đang sinh sống và làm việc tại Sài Gòn. Sau khi tốt nghiệp Học viện Báo chí và Tuyên truyền, quyết tâm theo đuổi đam mê làm phóng viên du lịch. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi mèo và nuôi ước mơ có cho mình một vườn hồng khoe sắc.">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
     </section>
     <section class="py-5 event-section section-bg-affect" id="event">
         <div class="container-fluid">
@@ -476,10 +385,9 @@
                 Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
             </h3>
             <div data-aos="flip-right" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                <div class="image-wrap poisition-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/45dfd859dd184042e2a6adaa320ac64b.jpeg');">
-                    <div class="dresscode-colors-wrap">
-                        <div class="dresscode-colors-event">
-                        </div>
+                <div class="image-wrap position-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/45dfd859dd184042e2a6adaa320ac64b.jpeg');">
+                    <div class="dresscode-colors-wrap w-100">
+
                     </div>
                 </div>
                 <div class="info-wrap p-3">
@@ -492,11 +400,10 @@
                     <a href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667" target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
                 </div>
             </div>
-            <div data-aos="flip-left" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                <div class="image-wrap poisition-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/8f7155409bf9ebdb9dffd7a38991aaa8.jpeg');">
-                    <div class="dresscode-colors-wrap">
-                        <div class="dresscode-colors-event">
-                        </div>
+            <div data-aos="flip-left " class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
+                <div class="image-wrap position-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/8f7155409bf9ebdb9dffd7a38991aaa8.jpeg');">
+                    <div class="dresscode-colors-wrap w-100">
+
                     </div>
                 </div>
                 <div class="info-wrap p-3">
@@ -509,10 +416,8 @@
                 </div>
             </div>
             <div data-aos="flip-right" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                <div class="image-wrap poisition-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/83d8a5c840b51447ab080ecb9a7de6df.jpeg');">
-                    <div class="dresscode-colors-wrap">
-                        <div class="dresscode-colors-event">
-                        </div>
+                <div class="image-wrap position-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/83d8a5c840b51447ab080ecb9a7de6df.jpeg');">
+                    <div class="dresscode-colors-wrap w-100">
                     </div>
                 </div>
                 <div class="info-wrap p-3">
@@ -524,12 +429,10 @@
                     <a href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667" target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
                 </div>
             </div>
-            <div data-aos="flip-left" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                <div class="image-wrap poisition-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/194d4b3c58f61adb4931a8a00a4fa019.jpeg');">
-                    <div class="dresscode-colors-wrap">
-                        <div class="dresscode-colors-event">
+            <div data-aos="flip-left " class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
+                <div class="image-wrap position-relative" style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/194d4b3c58f61adb4931a8a00a4fa019.jpeg');">
+                    <div class="dresscode-colors-wrap w-100">
 
-                        </div>
                     </div>
                 </div>
                 <div class="info-wrap p-3">
@@ -538,29 +441,94 @@
                     <p class="card-text">
                         Nhà hàng tiệc cưới For You
                     </p>
+
                     <a href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667" target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-5 people-section section-bg-affect" id="people">
+    <section class="py-5 couple-section section-bg-affect" id="couple">
+        <div class="container-fluid">
+            <h2 data-aos="fade-up" class="section-title text-center m-0">
+                Cô Dâu &amp; Chú Rể
+            </h2>
+            <!-- <h3 data-aos="fade-up" class="section-sub-title mb-0 text-center">
+                </h3> -->
+            <div class="section-title wrap-people mt-5">
+                <div class="member member-groom mb-5">
+                    <div data-aos="flip-left" class="member-image animation mb-3 text-center">
+                        <img src="https://cdn.biihappy.com/ziiweb/default/website/3b48bc6125ce6d186297a3e90a11085e.jpeg" />
+                    </div>
+                    <div class="parent d-flex flex-column mx-auto text-center my-2">
+                        <div class="parent-name">Con ông: <span>Hoàng Anh Kiệt</span></div>
+                        <div class="parent-name">Con bà: <span>Nguyễn Thị Hoài</span></div>
+                    </div>
+                    <div class="groom-story d-flex flex-column">
+                        <p class="text-story fs-6 text-center m-0">
+                            Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”
+                        </p>
+                        <a class="fs-6 fw-bold text-center mb-2 text-decoration-none" tabindex="0" role="button"
+                           data-bs-toggle="popover"
+                           data-bs-trigger="focus"
+                           data-bs-placement="bottom"
+                           data-bs-content="Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”">Xem thêm</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                            <span data-aos="fade-left" class="member-name m-0">
+                            Kiến Văn /
+                            </span>
+                        <ul data-aos="fade-up" class="member-contact social-links d-flex p-0 m-0 mx-2">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="member member-bride mt-5">
+                    <div data-aos="flip-right" class="member-image animation mb-3 text-center">
+                        <img src="https://cdn.biihappy.com/ziiweb/default/website/59b631f29bfb9f7cd20437d27ddbe4db.jpeg"/>
+                    </div>
+                    <div class="parent d-flex flex-column mx-auto text-center my-2">
+                        <div class="parent-name">Con ông: <span>Ngô Xuân Nghĩa</span></div>
+                        <div class="parent-name">Con bà: <span>Trần Hồng Thắm</span></div>
+                    </div>
+                    <div class="bride-story d-flex flex-column">
+                        <p class="text-story fs-6 text-center m-0">
+                            Cô gái đến từ xứ Huế mộng mơ, hiện đang sinh sống và làm việc tại Sài Gòn. Sau khi tốt nghiệp Học viện Báo chí và Tuyên truyền, quyết tâm theo đuổi đam mê làm phóng viên du lịch. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi mèo và nuôi ước mơ có cho mình một vườn hồng khoe sắc.
+                        </p>
+                        <a class="fs-6 fw-bold text-center mb-2 text-decoration-none" tabindex="0" role="button"
+                           data-bs-toggle="popover"
+                           data-bs-trigger="focus"
+                           data-bs-placement="bottom"
+                           data-bs-content="Cô gái đến từ xứ Huế mộng mơ, hiện đang sinh sống và làm việc tại Sài Gòn. Sau khi tốt nghiệp Học viện Báo chí và Tuyên truyền, quyết tâm theo đuổi đam mê làm phóng viên du lịch. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi mèo và nuôi ước mơ có cho mình một vườn hồng khoe sắc.">Xem thêm</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                            <span data-aos="fade-left" class="member-name m-0">
+                            Việt Hoài /
+                            </span>
+                        <ul data-aos="fade-up" class="member-contact social-links d-flex p-0 m-0 mx-2">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 section-sub-title people-section section-bg-affect" id="people">
         <div class="container-fluid">
             <h2 data-aos="fade-up" class="section-title text-center">
                 Phù Dâu &amp; Phù Rể
             </h2>
             <h3 data-aos="fade-up" class="section-sub-title mb-0 text-center">
-                Tình yêu không có rào cản. Nó nhảy rào, nhảy rào, xuyên tường để đến đích với đầy hy vọng.
             </h3>
             <div class="row">
                 <div data-aos="fade-right" class="col-12 col-sm-6">
                     <div class="w-100 mt-5">
                         <div class="rounded-circle people-avatar w-75 m-auto mb-3">
-                            <img src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/fa1780c6fe429eff4f2d564d6fbaff98.jpeg" class="card-img-top" alt="..." />
+                            <img src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/84729db4c190b37df0a2cdcedba3f9b2.jpeg" class="card-img-top" alt="..." />
                         </div>
                         <div class="text-center">
-                            <h6 class="section-sub-title title">Lý Mạc Sầu</h6>
+                            <h6 class="section-sub-title title">Phạm Ðoan Trang</h6>
                             <p class="people-content">
-                                Là cô gái đến từ vùng đất Cố Đô “Huế mộng Huế mơ” dịu dàng, nết na và thùy mị. Với nhiều tài lẻ như biết nấu ăn, cắm hoa, thêu thùa may vá.
+                                Là cô gái gái Huế thân thiện, hay cười, dễ giao tiếp nhưng thích yên tĩnh một mình. Thường hướng về những thói quen, sở thích mang tính truyền thống.
                             </p>
                             <ul class="social-links m-0 p-0">
                             </ul>
@@ -570,12 +538,12 @@
                 <div data-aos="fade-left" class="col-12 col-sm-6">
                     <div class="w-100 mt-5">
                         <div class="rounded-circle people-avatar w-75 m-auto mb-3">
-                            <img src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/0a6cfab9e637b586cec8724825f99d9e.jpeg" class="card-img-top" alt="..." />
+                            <img src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/7411475c6f639d4457ef1ea26ce09ee2.jpeg" class="card-img-top" alt="..." />
                         </div>
                         <div class="text-center">
-                            <h6 class="section-sub-title title">Trần Đức Minh</h6>
+                            <h6 class="section-sub-title title">Hoàng Gia Bảo</h6>
                             <p class="people-content">
-                                Chàng trai sinh năm 1996 tại Bình Dương, từng là sinh viên Đại học Kinh tế TP. Hồ Chí Minh. Hiện tại, đang làm nhân viên tín dụng ngân hàng.
+                                Hòa đồng, xông xáo, nhiệt tình và có trách nhiệm trong công việc. Là chàng trai yêu động vật, thích chơi game, thích ăn cơm nhà và nước uống có ga…
                             </p>
                             <ul class="social-links m-0 p-0">
                             </ul>
@@ -596,9 +564,9 @@
                 </h3>
                 <div class="row d-flex justify-content-around donate-box mb-1">
                     <div data-aos="fade-right" class="col-6 mb-4 donate-wrap">
-                        <div class="donate-card p-3 rounded text-center">
+                        <div class="donate-card p-3 px-3 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Đến chú rể</strong>
-                            <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/49bc348db7eb284d9fc249b9d958893b.jpeg"/>
+                            <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/49bc348db7eb284d9fc249b9d958893b.jpeg">
                             <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
                             <p class="mb-1">
                                 Tên tài khoản: <strong>12345678910</strong>
@@ -621,9 +589,9 @@
                         </div>
                     </div>
                     <div data-aos="fade-left" class="col-6 donate-wrap">
-                        <div class="donate-card p-3 rounded text-center">
+                        <div class="donate-card p-3 px-4 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Đến cô dâu</strong>
-                            <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/24343a45a211dedc5b1b0b57300eaba9.jpeg"/>
+                            <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/24343a45a211dedc5b1b0b57300eaba9.jpeg">
                             <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
                             <p class="mb-1">
                                 Tên tài khoản: <strong>12345678910</strong>
@@ -655,26 +623,21 @@
                 Lời cảm tạ
             </h2>
             <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
-                Cảm ơn bạn rất nhiều vì đã đến đám cưới của chúng tôi!
+                Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
             </h3>
             <div id="section-comment">
-                <div class="p-3 mb-3 " id="show-comments">
-                    <div class="box-comment p-3 mb-3">
+                <div class="mt-3 px-4 py-3 " id="show-comments">
+                    <div class="box-comment pb-3">
                         <p id="comment-detail" class="m-0">
-                            Cảm ơn tất cả những người bạn thân yêu của tôi!
-                            Tôi biết các bạn rất bận rộn, bận rộn với công việc, bận rộn với công việc gia đình
-                            Nhưng tất cả đã có mặt hôm nay để chúc mừng tinh yêu và hạnh phúc của chúng tôi
-                            Một lần nữa chân thành cảm ơn tất cả các bạn!
-                        </p>
+                            Cảm ơn các bạn đã có mặt để buổi lễ của chúng tôi được thêm phần long trọng </p>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section class="footer-section py-5 text-center section-bg-affect">
+    <section class="section-title footer-section py-5 text-center section-bg-affect">
         <div class="container-fluid">
             <h3 class="title">Thank you!</h3>
-            <h5 class="sub-title">-- Kiến Văn & Việt Hoài --</h5>
+            <h5 class="sub-title">--  Kiến Văn &  Việt Hoài --</h5>
         </div>
     </section>
 </div>
@@ -715,7 +678,7 @@
         </ul>
     </div>
 </div>
-<div class="py-5 donate-section donate-modal" id="donate-modal">
+<div class="py-5 donate-section donate-modal section-bg-affect" id="donate-modal">
     <div class="container-fluid donate-modal-content">
         <span class="donate-modal-close text-danger">&times;</span>
         <div class="w-100 p-4">
@@ -726,10 +689,10 @@
                 Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như đám cưới của chúng tôi.
             </h3>
             <div class="row justify-content-center donate-box mb-1">
-                <div data-aos="fade-right" class="col-6 px-4  mb-4">
+                <div data-aos="fade-right" class="col-6 px-4 mb-4">
                     <div class="donate-card p-4 rounded text-center">
                         <strong class="d-block sub-title mb-2 text-uppercase">Đến chú rể</strong>
-                        <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/49bc348db7eb284d9fc249b9d958893b.jpeg"/>
+                        <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/49bc348db7eb284d9fc249b9d958893b.jpeg">
                         <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
                         <p class="mb-1">
                             Tên tài khoản: <strong>12345678910</strong>
@@ -739,7 +702,6 @@
                         </p>
                         <p class="mb-1">Chi nhánh: <strong>TP.HCM</strong></p>
                         <div class="cryptos-box pt-2 border-top">
-
                         </div>
                         <div class="cryptos-box-view">
                             <h5><span class="coin-img"></span> Địa chỉ <span class="coin-id"></span></h5>
@@ -754,7 +716,7 @@
                 <div data-aos="fade-left" class="col-6 px-4 ">
                     <div class="donate-card p-4 rounded text-center">
                         <strong class="d-block sub-title mb-2 text-uppercase">Đến cô dâu</strong>
-                        <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/24343a45a211dedc5b1b0b57300eaba9.jpeg"/>
+                        <img class="qr-code-image m-auto mb-2" src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/24343a45a211dedc5b1b0b57300eaba9.jpeg">
                         <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
                         <p class="mb-1">
                             Tên tài khoản: <strong>12345678910</strong>
@@ -800,9 +762,9 @@
 </div>
 <script type="text/javascript">
     const biicore = {
-        template_id: '643d7a7706109e990f016274',
+        template_id: '643d7aa30be61636f4051958',
         templatePremium: ('1' === '1'),
-        themeRoot:'https://preview.iwedding.info/templates/template133',
+        themeRoot:'https://preview.iwedding.info/templates/template135',
         webroot : 'https://preview.iwedding.info',
         coreSite: 'https://biihappy.com',
         webToken: '61990349db8f76231c132068',
@@ -813,10 +775,10 @@
         isAutoPlay: ('1' === '1')
     };
 </script>
-<script src="{{asset('template20/js/libs.js?v=20240713')}}"></script>
-<script src="{{asset('template20/js/script.js?v=20240713')}}"></script>
-<script src="{{asset('template20/js/calendar.js?v=20240713')}}"></script>
-<script src="{{asset('template20/js/bii.js?v=20240713')}}"></script>
-<script src="{{asset('template20/js/insertTextAtCursor.js?v=20240713')}}"></script>
+<script type="text/javascript" src="{{asset('template18/js/jquery-plugin-collection.js?v=20240713')}}"></script>
+<script src="{{asset('template18/js/calendar.js?v=20240713')}}"></script>
+<script src="{{asset('template18/js/bii.js?v=20240713')}}"></script>
+<script src="{{asset('template18/js/libs.js')}}"></script>
+<script src="{{asset('template18/js/script.js')}}"></script>
 </body>
 </html>

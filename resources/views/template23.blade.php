@@ -857,28 +857,36 @@
                 <a class="nav-link active" aria-current="page" href="#video">Video Cưới</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#gallery">{{$custom['menu_album_hinh_cuoi'] ?? 'Album Hình cưới' }}</a>
+                <a class="section-sub-title nav-link active" aria-current="page" href="#gallery">{{$custom['menu_album_hinh_cuoi'] ?? 'Album Hình cưới' }}</a>
             </li>
+            @if(isset($websiteInfo['cau_chuyen_tinh_yeu']) && $websiteInfo['cau_chuyen_tinh_yeu'])
+                <li class="nav-item">
+                    <a class="section-sub-title nav-link active" aria-current="page" href="#story">{{$custom['menu_cau_chuyen_tinh_yeu'] ?? 'Chuyện tình yêu' }}</a>
+                </li>
+            @endif
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#story">{{$custom['menu_cau_chuyen_tinh_yeu'] ?? 'Chuyện tình yêu' }}</a>
+                <a class="section-sub-title nav-link active" aria-current="page" href="#invitation">Lời Ngỏ</a>
             </li>
+            @if(isset($websiteInfo['su_kien_cuoi']) && $websiteInfo['su_kien_cuoi'])
+                <li class="nav-item">
+                    <a class="section-sub-title nav-link" href="#event">{{$custom['menu_su_kien_cuoi'] ?? 'Sự kiện cưới' }}</a>
+                </li>
+            @endif
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#invitation">Lời Ngỏ</a>
+                <a class="section-sub-title nav-link" href="#couple">Cô Dâu &amp; Chú Rể</a>
             </li>
+            @if(isset($websiteInfo['phu_dau_phu_re']) && $websiteInfo['phu_dau_phu_re'])
+                <li class="nav-item">
+                    <a class="section-sub-title nav-link" href="#people">{{$custom['menu_phu_dau_phu_re'] ?? 'Phù dâu & Phù rể' }}</a>
+                </li>
+            @endif
+            @if(isset($websiteInfo['loi_cam_ta']) && $websiteInfo['loi_cam_ta'])
+                <li class="nav-item">
+                    <a class="section-sub-title nav-link" href="#wishes">{{$custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}</a>
+                </li>
+            @endif
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#couple">Cô Dâu &amp; Chú Rể</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#event">{{$custom['menu_su_kien_cuoi'] ?? 'Sự kiện cưới' }}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#people">{{$custom['menu_phu_dau_phu_re'] ?? 'Phù dâu & Phù rể' }}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#wishes">{{$custom['menu_loi_cam_ta'] ?? 'Lời cảm tạ' }}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#donate">{{$custom['menu_mung_cuoi'] ?? 'Mừng cưới' }}</a>
+                <a class="section-sub-title nav-link" href="#donate">{{$custom['menu_mung_cuoi'] ?? 'Mừng cưới' }}</a>
             </li>
         </ul>
     </div>

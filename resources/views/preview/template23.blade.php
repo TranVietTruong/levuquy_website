@@ -16,7 +16,7 @@
     <meta property="og:image:url" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
     <meta name="format-detection" content="telephone=no">
     <meta property="og:image:secure_url" content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
-    <link rel="shortcut icon" type="image/x-icon" href="https://iwedding.info/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/EedZsKg.png">
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap"rel="stylesheet" />
